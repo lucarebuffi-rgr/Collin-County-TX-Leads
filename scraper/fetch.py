@@ -41,22 +41,21 @@ log = logging.getLogger(__name__)
 BASE_URL = "https://collin.tx.publicsearch.us"
 
 DOC_TYPES = {
-    "LiPn":  ("pre_foreclosure", "Lis Pendens"),
-    "ReoLPn":("pre_foreclosure", "Release of Lis Pendens"),
-    "FeTLe": ("lien",            "Federal Tax Lien"),
-    "StTLe": ("lien",            "State Tax Lien"),
-    "Jun":   ("judgment",        "Judgment"),
-    "AboJn": ("judgment",        "Abstract of Judgment"),
-    "Prt":   ("probate",         "Probate"),
-    "Lie":   ("lien",            "Lien"),
-    "NooLe": ("lien",            "Notice of Lien"),
-    "MeLCc": ("lien",            "Mechanics Lien Contract"),
-    "HoLe":  ("lien",            "Hospital Lien"),
-    "ChSLe": ("lien",            "Child Support Lien"),
+    "LP":   ("pre_foreclosure", "Lis Pendens"),
+    "FTL":  ("lien",            "Federal Tax Lien"),
+    "STL":  ("lien",            "State Tax Lien"),
+    "JD":   ("judgment",        "Judgment"),
+    "AJ":   ("judgment",        "Abstract of Judgment"),
+    "PROB": ("probate",         "Probate"),
+    "AH":   ("probate",         "Affidavit of Heirship"),
+    "LIEN": ("lien",            "Lien"),
+    "ML":   ("lien",            "Mechanics Lien"),
+    "CSL":  ("lien",            "Child Support Lien"),
+    "BR":   ("probate",         "Bankruptcy"),
 }
 
 # For these types the GRANTEE is the property owner
-GRANTEE_IS_OWNER = {"NooLe", "Lie", "HoLe", "ChSLe", "FeTLe", "StTLe", "Jun", "AboJn", "LiPn", "ReoLPn"}
+GRANTEE_IS_OWNER = {"LIEN", "CSL", "FTL", "STL", "JD", "AJ", "LP"}
 
 LOOKBACK_DAYS   = 101
 REQUEST_TIMEOUT = 60
@@ -124,15 +123,10 @@ def normalize_for_fuzzy(name: str) -> tuple:
 # ── PARCEL LOOKUP ─────────────────────────────────────────────────────────
 
 def build_parcel_lookup() -> dict:
-    """
-    Collin CAD exposes a public ArcGIS REST API.
-    We query it to get owner name + address for all parcels.
-    """
     lookup = {}
     log.info("Building Collin CAD parcel lookup via ArcGIS API...")
 
     try:
-        # Collin CAD ArcGIS feature service
         base = "https://services.arcgis.com/KTcxiTD9dsQw4r7Z/arcgis/rest/services/Collin_CAD_Public/FeatureServer/0/query"
         offset = 0
         batch  = 1000
@@ -166,9 +160,9 @@ def build_parcel_lookup() -> dict:
                 if not owner_name:
                     continue
 
-                situs_num  = att.get("SITUS_NUM", "")  or ""
+                situs_num  = att.get("SITUS_NUM", "")    or ""
                 situs_str  = att.get("SITUS_STREET", "") or ""
-                situs_sfx  = att.get("SITUS_SFX", "")  or ""
+                situs_sfx  = att.get("SITUS_SFX", "")   or ""
                 prop_address = f"{situs_num} {situs_str} {situs_sfx}".strip()
                 prop_city    = att.get("SITUS_CITY", "") or "McKinney"
                 prop_zip     = att.get("SITUS_ZIP", "")  or ""
@@ -233,7 +227,7 @@ def parse_text_block(text: str, doc_code: str, cat: str, cat_label: str, dt_from
         if not grantor:
             return None
 
-        search_url = (f"{BASE_URL}/results?department=RP&docTypes={doc_code}"
+        search_url = (f"{BASE_URL}/results?department=RP&_docTypes={doc_code}"
                       f"&recordedDateRange={dt_from},{dt_to}&searchType=advancedSearch")
 
         return {
@@ -275,7 +269,7 @@ async def scrape_all_playwright(date_from: str, date_to: str) -> list:
         for doc_code, (cat, cat_label) in DOC_TYPES.items():
             url = (f"{BASE_URL}/results"
                    f"?department=RP"
-                   f"&docTypes={doc_code}"
+                   f"&_docTypes={doc_code}"
                    f"&recordedDateRange={dt_from},{dt_to}"
                    f"&searchType=advancedSearch")
 
@@ -415,16 +409,16 @@ async def scrape_all_playwright(date_from: str, date_to: str) -> list:
 
 def generate_demo_records(date_from: str, date_to: str) -> list:
     samples = [
-        ("LiPn",  "pre_foreclosure", "Lis Pendens",            "SMITH ROBERT",          "ROCKET MORTGAGE LLC",   0),
-        ("Jun",   "judgment",        "Judgment",                "JONES MARY B",          "CAPITAL ONE NA",    87500),
-        ("FeTLe", "lien",            "Federal Tax Lien",        "WILLIAMS DAVID",        "IRS",               45200),
-        ("AboJn", "judgment",        "Abstract of Judgment",    "JOHNSON PATRICIA",      "CITIBANK NA",       18700),
-        ("MeLCc", "lien",            "Mechanics Lien Contract", "BROWN MICHAEL",         "LONE STAR CONTR",   22000),
-        ("Prt",   "probate",         "Probate",                 "ESTATE OF DAVIS JAMES", "COLLIN CO PROBATE",     0),
-        ("StTLe", "lien",            "State Tax Lien",          "HENDERSON ROBERT",      "STATE OF TEXAS",     9800),
-        ("ChSLe", "lien",            "Child Support Lien",      "RODRIGUEZ JUAN",        "ATTY/GEN",           5000),
-        ("HoLe",  "lien",            "Hospital Lien",           "THOMPSON SARAH",        "TEXAS HEALTH",       2100),
-        ("NooLe", "lien",            "Notice of Lien",          "GARCIA CARLOS",         "FRISCO HOA",         3500),
+        ("LP",   "pre_foreclosure", "Lis Pendens",       "SMITH ROBERT",          "ROCKET MORTGAGE LLC",   0),
+        ("JD",   "judgment",        "Judgment",           "JONES MARY B",          "CAPITAL ONE NA",    87500),
+        ("FTL",  "lien",            "Federal Tax Lien",   "WILLIAMS DAVID",        "IRS",               45200),
+        ("AJ",   "judgment",        "Abstract of Judgment","JOHNSON PATRICIA",     "CITIBANK NA",       18700),
+        ("ML",   "lien",            "Mechanics Lien",     "BROWN MICHAEL",         "LONE STAR CONTR",   22000),
+        ("PROB", "probate",         "Probate",            "ESTATE OF DAVIS JAMES", "COLLIN CO PROBATE",     0),
+        ("STL",  "lien",            "State Tax Lien",     "HENDERSON ROBERT",      "STATE OF TEXAS",     9800),
+        ("CSL",  "lien",            "Child Support Lien", "RODRIGUEZ JUAN",        "ATTY/GEN",           5000),
+        ("LIEN", "lien",            "Lien",               "THOMPSON SARAH",        "FRISCO HOA",         2100),
+        ("AH",   "probate",         "Affidavit of Heirship","GARCIA CARLOS",       "GARCIA MARIA",          0),
     ]
     base = datetime.strptime(date_from, "%m/%d/%Y")
     recs = []
@@ -440,7 +434,7 @@ def generate_demo_records(date_from: str, date_to: str) -> list:
             "grantee":   grantee,
             "legal":     "DEMO RECORD",
             "amount":    float(amt) if amt else None,
-            "clerk_url": f"{BASE_URL}/results?department=RP&docTypes={code}&searchType=advancedSearch",
+            "clerk_url": f"{BASE_URL}/results?department=RP&_docTypes={code}&searchType=advancedSearch",
             "_demo":     True,
         })
     return recs
@@ -514,15 +508,14 @@ def score_record(rec: dict) -> tuple:
     dtype  = rec.get("doc_type", "")
     amount = rec.get("amount") or 0
 
-    if dtype in ("LiPn", "ReoLPn"): flags.append("Lis pendens")
-    if dtype in ("FeTLe", "StTLe"): flags.append("Tax lien")
-    if dtype in ("Jun", "AboJn"):   flags.append("Judgment lien")
-    if dtype == "Prt":   flags.append("Probate / estate")
-    if dtype == "MeLCc": flags.append("Mechanic lien")
-    if dtype == "NooLe": flags.append("Notice of lien")
-    if dtype == "HoLe":  flags.append("Hospital lien")
-    if dtype == "ChSLe": flags.append("Child support lien")
-    if dtype == "Lie":   flags.append("Lien")
+    if dtype == "LP":             flags.append("Lis pendens")
+    if dtype in ("FTL", "STL"):   flags.append("Tax lien")
+    if dtype in ("JD", "AJ"):     flags.append("Judgment lien")
+    if dtype in ("PROB", "AH"):   flags.append("Probate / estate")
+    if dtype == "ML":             flags.append("Mechanic lien")
+    if dtype == "LIEN":           flags.append("Lien")
+    if dtype == "CSL":            flags.append("Child support lien")
+    if dtype == "BR":             flags.append("Bankruptcy")
 
     owner = rec.get("owner", "").upper()
     if any(x in owner for x in ("LLC", "INC", "CORP", "LTD", "LP ", "L.P.")):
@@ -537,7 +530,8 @@ def score_record(rec: dict) -> tuple:
 
     has_addr = bool(rec.get("prop_address") or rec.get("mail_address"))
     score += 10 * len(flags)
-    if "Lis pendens" in flags: score += 20
+    if "Lis pendens" in flags:  score += 20
+    if "Bankruptcy" in flags:   score += 15
     if amount and amount > 100_000: score += 15
     elif amount and amount > 50_000: score += 10
     if "New this week" in flags: score += 5
