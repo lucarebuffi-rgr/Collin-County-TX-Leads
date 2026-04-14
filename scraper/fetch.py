@@ -124,12 +124,12 @@ def normalize_for_fuzzy(name: str) -> tuple:
 
 def build_parcel_lookup() -> dict:
     lookup = {}
-    log.info("Building Collin CAD parcel lookup via ArcGIS API...")
+    log.info("Building Collin CAD parcel lookup via ArcGIS API (residential only)...")
 
     try:
-        base = "https://services.arcgis.com/KTcxiTD9dsQw4r7Z/arcgis/rest/services/Collin_CAD_Public/FeatureServer/0/query"
+        base = "https://services2.arcgis.com/uXyoacYrZTPTKD3R/arcgis/rest/services/CCAD_Parcel_Feature_Set/FeatureServer/4/query"
         offset = 0
-        batch  = 1000
+        batch  = 2000
         total  = 0
 
         session = requests.Session()
@@ -137,11 +137,11 @@ def build_parcel_lookup() -> dict:
 
         while True:
             params = {
-                "where":         "1=1",
-                "outFields":     "OWN_NAME,SITUS_NUM,SITUS_STREET,SITUS_SFX,SITUS_CITY,SITUS_ZIP,MAIL_ADDR,MAIL_CITY,MAIL_STATE,MAIL_ZIP",
-                "returnGeometry":"false",
-                "f":             "json",
-                "resultOffset":  offset,
+                "where":             "propCategoryCode='R'",
+                "outFields":         "ownerName,situsBldgNum,situsStreetPrefix,situsStreetName,situsStreetSuffix,situsCity,situsZip,ownerAddrLine1,ownerAddrCity,ownerAddrState,ownerAddrZip",
+                "returnGeometry":    "false",
+                "f":                 "json",
+                "resultOffset":      offset,
                 "resultRecordCount": batch,
             }
             r = session.get(base, params=params, timeout=REQUEST_TIMEOUT)
@@ -156,20 +156,21 @@ def build_parcel_lookup() -> dict:
 
             for feat in features:
                 att = feat.get("attributes", {})
-                owner_name = (att.get("OWN_NAME") or "").upper().strip()
+                owner_name = (att.get("ownerName") or "").upper().strip()
                 if not owner_name:
                     continue
 
-                situs_num  = att.get("SITUS_NUM", "")    or ""
-                situs_str  = att.get("SITUS_STREET", "") or ""
-                situs_sfx  = att.get("SITUS_SFX", "")   or ""
-                prop_address = f"{situs_num} {situs_str} {situs_sfx}".strip()
-                prop_city    = att.get("SITUS_CITY", "") or "McKinney"
-                prop_zip     = att.get("SITUS_ZIP", "")  or ""
-                mail_address = att.get("MAIL_ADDR", "")  or ""
-                mail_city    = att.get("MAIL_CITY", "")  or ""
-                mail_state   = att.get("MAIL_STATE", "") or "TX"
-                mail_zip     = att.get("MAIL_ZIP", "")   or ""
+                bldg_num     = att.get("situsBldgNum", "")      or ""
+                prefix       = att.get("situsStreetPrefix", "") or ""
+                street       = att.get("situsStreetName", "")   or ""
+                suffix       = att.get("situsStreetSuffix", "") or ""
+                prop_address = f"{bldg_num} {prefix} {street} {suffix}".strip()
+                prop_city    = att.get("situsCity", "")      or "McKinney"
+                prop_zip     = att.get("situsZip", "")       or ""
+                mail_address = att.get("ownerAddrLine1", "") or ""
+                mail_city    = att.get("ownerAddrCity", "")  or ""
+                mail_state   = att.get("ownerAddrState", "") or "TX"
+                mail_zip     = att.get("ownerAddrZip", "")   or ""
 
                 parcel = {
                     "prop_address": prop_address,
@@ -409,16 +410,16 @@ async def scrape_all_playwright(date_from: str, date_to: str) -> list:
 
 def generate_demo_records(date_from: str, date_to: str) -> list:
     samples = [
-        ("LP",   "pre_foreclosure", "Lis Pendens",       "SMITH ROBERT",          "ROCKET MORTGAGE LLC",   0),
-        ("JD",   "judgment",        "Judgment",           "JONES MARY B",          "CAPITAL ONE NA",    87500),
-        ("FTL",  "lien",            "Federal Tax Lien",   "WILLIAMS DAVID",        "IRS",               45200),
-        ("AJ",   "judgment",        "Abstract of Judgment","JOHNSON PATRICIA",     "CITIBANK NA",       18700),
-        ("ML",   "lien",            "Mechanics Lien",     "BROWN MICHAEL",         "LONE STAR CONTR",   22000),
-        ("PROB", "probate",         "Probate",            "ESTATE OF DAVIS JAMES", "COLLIN CO PROBATE",     0),
-        ("STL",  "lien",            "State Tax Lien",     "HENDERSON ROBERT",      "STATE OF TEXAS",     9800),
-        ("CSL",  "lien",            "Child Support Lien", "RODRIGUEZ JUAN",        "ATTY/GEN",           5000),
-        ("LIEN", "lien",            "Lien",               "THOMPSON SARAH",        "FRISCO HOA",         2100),
-        ("AH",   "probate",         "Affidavit of Heirship","GARCIA CARLOS",       "GARCIA MARIA",          0),
+        ("LP",   "pre_foreclosure", "Lis Pendens",        "SMITH ROBERT",          "ROCKET MORTGAGE LLC",   0),
+        ("JD",   "judgment",        "Judgment",            "JONES MARY B",          "CAPITAL ONE NA",    87500),
+        ("FTL",  "lien",            "Federal Tax Lien",    "WILLIAMS DAVID",        "IRS",               45200),
+        ("AJ",   "judgment",        "Abstract of Judgment","JOHNSON PATRICIA",      "CITIBANK NA",       18700),
+        ("ML",   "lien",            "Mechanics Lien",      "BROWN MICHAEL",         "LONE STAR CONTR",   22000),
+        ("PROB", "probate",         "Probate",             "ESTATE OF DAVIS JAMES", "COLLIN CO PROBATE",     0),
+        ("STL",  "lien",            "State Tax Lien",      "HENDERSON ROBERT",      "STATE OF TEXAS",     9800),
+        ("CSL",  "lien",            "Child Support Lien",  "RODRIGUEZ JUAN",        "ATTY/GEN",           5000),
+        ("LIEN", "lien",            "Lien",                "THOMPSON SARAH",        "FRISCO HOA",         2100),
+        ("AH",   "probate",         "Affidavit of Heirship","GARCIA CARLOS",        "GARCIA MARIA",          0),
     ]
     base = datetime.strptime(date_from, "%m/%d/%Y")
     recs = []
@@ -508,14 +509,14 @@ def score_record(rec: dict) -> tuple:
     dtype  = rec.get("doc_type", "")
     amount = rec.get("amount") or 0
 
-    if dtype == "LP":             flags.append("Lis pendens")
-    if dtype in ("FTL", "STL"):   flags.append("Tax lien")
-    if dtype in ("JD", "AJ"):     flags.append("Judgment lien")
-    if dtype in ("PROB", "AH"):   flags.append("Probate / estate")
-    if dtype == "ML":             flags.append("Mechanic lien")
-    if dtype == "LIEN":           flags.append("Lien")
-    if dtype == "CSL":            flags.append("Child support lien")
-    if dtype == "BR":             flags.append("Bankruptcy")
+    if dtype == "LP":           flags.append("Lis pendens")
+    if dtype in ("FTL","STL"):  flags.append("Tax lien")
+    if dtype in ("JD","AJ"):    flags.append("Judgment lien")
+    if dtype in ("PROB","AH"):  flags.append("Probate / estate")
+    if dtype == "ML":           flags.append("Mechanic lien")
+    if dtype == "LIEN":         flags.append("Lien")
+    if dtype == "CSL":          flags.append("Child support lien")
+    if dtype == "BR":           flags.append("Bankruptcy")
 
     owner = rec.get("owner", "").upper()
     if any(x in owner for x in ("LLC", "INC", "CORP", "LTD", "LP ", "L.P.")):
