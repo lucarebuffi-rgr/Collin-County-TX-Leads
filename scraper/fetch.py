@@ -55,10 +55,11 @@ DOC_TYPES = {
 }
 
 # For these types the GRANTEE is the property owner
-GRANTEE_IS_OWNER = {"LIEN", "CSL", "FTL", "STL", "JD", "AJ", "LP"}
+GRANTEE_IS_OWNER = {"LIEN", "CSL", "FTL", "STL", "JD", "AJ"}
 
 LOOKBACK_DAYS   = 101
 REQUEST_TIMEOUT = 60
+PAGE_LIMIT      = 250  # max results per page on Collin PublicSearch
 
 # Suffixes to strip before name comparison
 NAME_SUFFIXES = {"JR", "SR", "II", "III", "IV", "V", "ESQ", "TRUSTEE", "TR",
@@ -124,7 +125,7 @@ def normalize_for_fuzzy(name: str) -> tuple:
 
 def build_parcel_lookup() -> dict:
     lookup = {}
-    log.info("Building Collin CAD parcel lookup via ArcGIS API...")
+    log.info("Building Collin CAD parcel lookup via ArcGIS API (residential only)...")
 
     try:
         base = "https://services2.arcgis.com/uXyoacYrZTPTKD3R/arcgis/rest/services/CCAD_Parcel_Feature_Set/FeatureServer/4/query"
@@ -223,7 +224,6 @@ def parse_text_block(text: str, doc_code: str, cat: str, cat_label: str, dt_from
         if len(parts) < 5:
             return None
 
-        # Find the first non-empty string as grantor (skip blank checkbox/icon cells)
         non_empty = [p for p in parts if p]
         if len(non_empty) < 3:
             return None
@@ -234,12 +234,10 @@ def parse_text_block(text: str, doc_code: str, cat: str, cat_label: str, dt_from
         doc_num   = ""
         legal     = ""
 
-        # Find date field
         for i, p in enumerate(non_empty):
             if re.match(r"\d{1,2}/\d{1,2}/\d{4}", p):
                 filed_raw = p
                 doc_num   = non_empty[i + 1] if i + 1 < len(non_empty) else ""
-                # legal is after the second date field (--/--/--)
                 legal     = non_empty[i + 3] if i + 3 < len(non_empty) else ""
                 break
 
@@ -268,6 +266,80 @@ def parse_text_block(text: str, doc_code: str, cat: str, cat_label: str, dt_from
 
 # ── PLAYWRIGHT SCRAPER ────────────────────────────────────────────────────
 
+async def scrape_doc_type(browser, doc_code: str, cat: str, cat_label: str,
+                           dt_from: str, dt_to: str) -> list:
+    """Scrape all pages for a single doc type with pagination."""
+    records = []
+    offset  = 0
+
+    while True:
+        url = (f"{BASE_URL}/results"
+               f"?department=RP"
+               f"&_docTypes={doc_code}"
+               f"&recordedDateRange={dt_from},{dt_to}"
+               f"&searchType=advancedSearch"
+               f"&limit={PAGE_LIMIT}"
+               f"&offset={offset}")
+
+        log.info(f"  {doc_code} offset={offset} …")
+
+        context = await browser.new_context(
+            user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                       "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        )
+        page = await context.new_page()
+
+        try:
+            await page.goto(url, timeout=30_000)
+            await asyncio.sleep(15)
+
+            js_result = await page.evaluate("""
+                () => {
+                    const texts = [];
+                    const rows = document.querySelectorAll('tbody tr');
+                    rows.forEach(row => {
+                        const cells = row.querySelectorAll('td');
+                        if (cells.length >= 5) {
+                            const parts = [];
+                            cells.forEach(td => parts.push(td.innerText.trim()));
+                            texts.push(parts.join('\\t'));
+                        }
+                    });
+                    return texts;
+                }
+            """)
+
+            if not js_result:
+                log.info(f"    No rows found — done paginating {doc_code}")
+                break
+
+            log.info(f"    Got {len(js_result)} rows")
+            page_records = []
+            for text in js_result:
+                rec = parse_text_block(text, doc_code, cat, cat_label, dt_from, dt_to)
+                if rec:
+                    page_records.append(rec)
+
+            records.extend(page_records)
+
+            # If we got fewer than PAGE_LIMIT rows, we're on the last page
+            if len(js_result) < PAGE_LIMIT:
+                log.info(f"    Last page for {doc_code}")
+                break
+
+            offset += PAGE_LIMIT
+
+        except Exception as e:
+            log.warning(f"    Error scraping {doc_code} offset={offset}: {e}")
+            break
+        finally:
+            await page.close()
+            await context.close()
+
+    log.info(f"  {doc_code} total: {len(records)} records")
+    return records
+
+
 async def scrape_all_playwright(date_from: str, date_to: str) -> list:
     if not HAS_PLAYWRIGHT:
         log.error("Playwright not available!")
@@ -286,121 +358,8 @@ async def scrape_all_playwright(date_from: str, date_to: str) -> list:
         browser = await p.chromium.launch(headless=True)
 
         for doc_code, (cat, cat_label) in DOC_TYPES.items():
-            url = (f"{BASE_URL}/results"
-                   f"?department=RP"
-                   f"&_docTypes={doc_code}"
-                   f"&recordedDateRange={dt_from},{dt_to}"
-                   f"&searchType=advancedSearch")
-
-            log.info(f"  Scraping {doc_code} ({cat_label}) …")
-
-            captured_api = []
-            context = await browser.new_context(
-                user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
-                           "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-            )
-            page = await context.new_page()
-
-            async def handle_response(response):
-                try:
-                    rurl = response.url
-                    if response.status == 200 and any(
-                        k in rurl for k in ["search", "instrument", "document",
-                                            "result", "query", "api", "elastic"]
-                    ):
-                        ct = response.headers.get("content-type", "")
-                        if "json" in ct:
-                            data = await response.json()
-                            captured_api.append(data)
-                            log.info(f"    Captured API: {rurl[:80]}")
-                except Exception:
-                    pass
-
-            page.on("response", handle_response)
-
-            try:
-                await page.goto(url, timeout=30_000)
-                await asyncio.sleep(15)
-
-                for data in captured_api:
-                    hits = (
-                        data.get("hits", {}).get("hits", []) or
-                        data.get("results", []) or
-                        data.get("documents", []) or
-                        []
-                    )
-                    if hits:
-                        log.info(f"    API hits: {len(hits)}")
-                        for hit in hits:
-                            src = hit.get("_source", hit)
-                            grantor = ""
-                            grantee = ""
-                            for party in src.get("parties", []):
-                                role = str(party.get("role", "")).upper()
-                                name = str(party.get("name", "")).strip()
-                                if any(r in role for r in ["GRANTOR", "SELLER", "DEBTOR", "OWNER"]):
-                                    grantor = grantor or name
-                                else:
-                                    grantee = grantee or name
-                            if not grantor:
-                                grantor = src.get("grantor") or src.get("grantorName") or ""
-                            if not grantee:
-                                grantee = src.get("grantee") or src.get("granteeName") or ""
-
-                            filed_raw = (src.get("recordedDate") or src.get("filedDate") or
-                                        src.get("instrumentDate") or "")
-                            doc_num   = (src.get("instrumentNumber") or src.get("docNumber") or
-                                        src.get("id") or "")
-                            legal     = src.get("legalDescription") or src.get("legal") or ""
-                            doc_id    = src.get("id") or doc_num
-
-                            if grantor or doc_num:
-                                all_records.append({
-                                    "doc_num":   str(doc_num),
-                                    "doc_type":  doc_code,
-                                    "cat":       cat,
-                                    "cat_label": cat_label,
-                                    "filed":     parse_date(str(filed_raw)) or str(filed_raw),
-                                    "grantor":   grantor,
-                                    "grantee":   grantee,
-                                    "legal":     legal,
-                                    "amount":    None,
-                                    "clerk_url": f"{BASE_URL}/doc/{doc_id}" if doc_id else url,
-                                    "_demo":     False,
-                                })
-
-                if not captured_api:
-                    log.info(f"    No API data, trying JS state …")
-                    js_result = await page.evaluate("""
-                        () => {
-                            const texts = [];
-                            const rows = document.querySelectorAll('tbody tr');
-                            rows.forEach(row => {
-                                const cells = row.querySelectorAll('td');
-                                if (cells.length >= 5) {
-                                    const parts = [];
-                                    cells.forEach(td => parts.push(td.innerText.trim()));
-                                    texts.push(parts.join('\\t'));
-                                }
-                            });
-                            return texts;
-                        }
-                    """)
-
-                    if js_result:
-                        log.info(f"    JS returned {len(js_result)} text blocks")
-                        for text in js_result:
-                            rec = parse_text_block(text, doc_code, cat, cat_label, dt_from, dt_to)
-                            if rec:
-                                all_records.append(rec)
-                    else:
-                        log.info(f"    JS returned nothing")
-
-            except Exception as e:
-                log.warning(f"    Error for {doc_code}: {e}")
-            finally:
-                await page.close()
-                await context.close()
+            recs = await scrape_doc_type(browser, doc_code, cat, cat_label, dt_from, dt_to)
+            all_records.extend(recs)
 
         await browser.close()
 
@@ -411,16 +370,16 @@ async def scrape_all_playwright(date_from: str, date_to: str) -> list:
 
 def generate_demo_records(date_from: str, date_to: str) -> list:
     samples = [
-        ("LP",   "pre_foreclosure", "Lis Pendens",        "SMITH ROBERT",          "ROCKET MORTGAGE LLC",   0),
-        ("JD",   "judgment",        "Judgment",            "JONES MARY B",          "CAPITAL ONE NA",    87500),
-        ("FTL",  "lien",            "Federal Tax Lien",    "WILLIAMS DAVID",        "IRS",               45200),
-        ("AJ",   "judgment",        "Abstract of Judgment","JOHNSON PATRICIA",      "CITIBANK NA",       18700),
-        ("ML",   "lien",            "Mechanics Lien",      "BROWN MICHAEL",         "LONE STAR CONTR",   22000),
-        ("PROB", "probate",         "Probate",             "ESTATE OF DAVIS JAMES", "COLLIN CO PROBATE",     0),
-        ("STL",  "lien",            "State Tax Lien",      "HENDERSON ROBERT",      "STATE OF TEXAS",     9800),
-        ("CSL",  "lien",            "Child Support Lien",  "RODRIGUEZ JUAN",        "ATTY/GEN",           5000),
-        ("LIEN", "lien",            "Lien",                "THOMPSON SARAH",        "FRISCO HOA",         2100),
-        ("AH",   "probate",         "Affidavit of Heirship","GARCIA CARLOS",        "GARCIA MARIA",          0),
+        ("LP",   "pre_foreclosure", "Lis Pendens",         "SMITH ROBERT",          "ROCKET MORTGAGE LLC",  0),
+        ("JD",   "judgment",        "Judgment",             "JONES MARY B",          "CAPITAL ONE NA",   87500),
+        ("FTL",  "lien",            "Federal Tax Lien",     "WILLIAMS DAVID",        "IRS",              45200),
+        ("AJ",   "judgment",        "Abstract of Judgment", "JOHNSON PATRICIA",      "CITIBANK NA",      18700),
+        ("ML",   "lien",            "Mechanics Lien",       "BROWN MICHAEL",         "LONE STAR CONTR",  22000),
+        ("PROB", "probate",         "Probate",              "ESTATE OF DAVIS JAMES", "COLLIN CO PROB",       0),
+        ("STL",  "lien",            "State Tax Lien",       "HENDERSON ROBERT",      "STATE OF TEXAS",    9800),
+        ("CSL",  "lien",            "Child Support Lien",   "RODRIGUEZ JUAN",        "ATTY/GEN",          5000),
+        ("LIEN", "lien",            "Lien",                 "THOMPSON SARAH",        "FRISCO HOA",        2100),
+        ("AH",   "probate",         "Affidavit of Heirship","GARCIA CARLOS",         "GARCIA MARIA",         0),
     ]
     base = datetime.strptime(date_from, "%m/%d/%Y")
     recs = []
@@ -436,7 +395,7 @@ def generate_demo_records(date_from: str, date_to: str) -> list:
             "grantee":   grantee,
             "legal":     "DEMO RECORD",
             "amount":    float(amt) if amt else None,
-            "clerk_url": f"{BASE_URL}/results?department=RP&docTypes={code}&searchType=advancedSearch",
+            "clerk_url": f"{BASE_URL}/results?department=RP&_docTypes={code}&searchType=advancedSearch",
             "_demo":     True,
         })
     return recs
@@ -532,7 +491,8 @@ def score_record(rec: dict) -> tuple:
 
     has_addr = bool(rec.get("prop_address") or rec.get("mail_address"))
     score += 10 * len(flags)
-    if "Lis pendens" in flags: score += 20
+    if "Lis pendens" in flags:  score += 20
+    if "Bankruptcy" in flags:   score += 15
     if amount and amount > 100_000: score += 15
     elif amount and amount > 50_000: score += 10
     if "New this week" in flags: score += 5
@@ -665,7 +625,7 @@ async def main():
     parcel_lookup = build_parcel_lookup()
     log.info(f"  {len(parcel_lookup):,} name variants indexed")
 
-    log.info("Scraping with Playwright (API intercept + JS state) …")
+    log.info("Scraping with Playwright (pagination enabled) …")
     raw_records = await scrape_all_playwright(date_from, date_to)
     log.info(f"Total raw records: {len(raw_records)}")
 
