@@ -55,7 +55,7 @@ DOC_TYPES = {
 }
 
 # For these types the GRANTEE is the property owner
-GRANTEE_IS_OWNER = {"LIEN", "CSL", "FTL", "STL", "JD", "AJ"}
+GRANTEE_IS_OWNER = {"LIEN", "CSL", "FTL", "STL", "JD", "AJ", "LP"}
 
 LOOKBACK_DAYS   = 101
 REQUEST_TIMEOUT = 60
@@ -124,7 +124,7 @@ def normalize_for_fuzzy(name: str) -> tuple:
 
 def build_parcel_lookup() -> dict:
     lookup = {}
-    log.info("Building Collin CAD parcel lookup via ArcGIS API (residential only)...")
+    log.info("Building Collin CAD parcel lookup via ArcGIS API...")
 
     try:
         base = "https://services2.arcgis.com/uXyoacYrZTPTKD3R/arcgis/rest/services/CCAD_Parcel_Feature_Set/FeatureServer/4/query"
@@ -137,7 +137,7 @@ def build_parcel_lookup() -> dict:
 
         while True:
             params = {
-                "where":             "propCategoryCode IN ('A', 'B')",
+                "where":             "propCategoryCode='R'",
                 "outFields":         "ownerName,situsBldgNum,situsStreetPrefix,situsStreetName,situsStreetSuffix,situsCity,situsZip,ownerAddrLine1,ownerAddrCity,ownerAddrState,ownerAddrZip",
                 "returnGeometry":    "false",
                 "f":                 "json",
@@ -223,6 +223,7 @@ def parse_text_block(text: str, doc_code: str, cat: str, cat_label: str, dt_from
         if len(parts) < 5:
             return None
 
+        # Find the first non-empty string as grantor (skip blank checkbox/icon cells)
         non_empty = [p for p in parts if p]
         if len(non_empty) < 3:
             return None
@@ -233,10 +234,12 @@ def parse_text_block(text: str, doc_code: str, cat: str, cat_label: str, dt_from
         doc_num   = ""
         legal     = ""
 
+        # Find date field
         for i, p in enumerate(non_empty):
             if re.match(r"\d{1,2}/\d{1,2}/\d{4}", p):
                 filed_raw = p
                 doc_num   = non_empty[i + 1] if i + 1 < len(non_empty) else ""
+                # legal is after the second date field (--/--/--)
                 legal     = non_empty[i + 3] if i + 3 < len(non_empty) else ""
                 break
 
@@ -287,8 +290,7 @@ async def scrape_all_playwright(date_from: str, date_to: str) -> list:
                    f"?department=RP"
                    f"&_docTypes={doc_code}"
                    f"&recordedDateRange={dt_from},{dt_to}"
-                   f"&searchType=advancedSearch"
-                   f"&limit=200")
+                   f"&searchType=advancedSearch")
 
             log.info(f"  Scraping {doc_code} ({cat_label}) …")
 
@@ -367,7 +369,7 @@ async def scrape_all_playwright(date_from: str, date_to: str) -> list:
                                     "_demo":     False,
                                 })
 
-                if not captured_api or not all_records:
+                if not captured_api:
                     log.info(f"    No API data, trying JS state …")
                     js_result = await page.evaluate("""
                         () => {
@@ -434,7 +436,7 @@ def generate_demo_records(date_from: str, date_to: str) -> list:
             "grantee":   grantee,
             "legal":     "DEMO RECORD",
             "amount":    float(amt) if amt else None,
-            "clerk_url": f"{BASE_URL}/results?department=RP&_docTypes={code}&searchType=advancedSearch",
+            "clerk_url": f"{BASE_URL}/results?department=RP&docTypes={code}&searchType=advancedSearch",
             "_demo":     True,
         })
     return recs
@@ -530,8 +532,7 @@ def score_record(rec: dict) -> tuple:
 
     has_addr = bool(rec.get("prop_address") or rec.get("mail_address"))
     score += 10 * len(flags)
-    if "Lis pendens" in flags:  score += 20
-    if "Bankruptcy" in flags:   score += 15
+    if "Lis pendens" in flags: score += 20
     if amount and amount > 100_000: score += 15
     elif amount and amount > 50_000: score += 10
     if "New this week" in flags: score += 5
