@@ -55,7 +55,7 @@ DOC_TYPES = {
 }
 
 # For these types the GRANTEE is the property owner
-GRANTEE_IS_OWNER = {"LIEN", "CSL", "FTL", "STL", "JD", "AJ", "LP"}
+GRANTEE_IS_OWNER = {"LIEN", "CSL", "FTL", "STL", "JD", "AJ"}
 
 LOOKBACK_DAYS   = 101
 REQUEST_TIMEOUT = 60
