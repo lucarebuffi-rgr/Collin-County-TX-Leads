@@ -204,28 +204,46 @@ def build_parcel_lookup() -> dict:
 # ── TEXT BLOCK PARSER ─────────────────────────────────────────────────────
 
 def parse_text_block(text: str, doc_code: str, cat: str, cat_label: str, dt_from: str, dt_to: str) -> Optional[dict]:
+    """
+    Collin County table columns (from DOM inspection):
+    idx 0: checkbox (empty)
+    idx 1: icon (empty)
+    idx 2: grantor
+    idx 3: grantee
+    idx 4: doc type label
+    idx 5: filed date (M/D/YYYY)
+    idx 6: doc number
+    idx 7: some date (--/--/--)
+    idx 8: legal description
+    """
     try:
         if not text:
             return None
         parts = [p.strip() for p in text.split("\t")]
-        parts = [p for p in parts if p]
-        if len(parts) < 3:
+        if len(parts) < 5:
             return None
 
-        grantor   = parts[0] if len(parts) > 0 else ""
-        grantee   = parts[1] if len(parts) > 1 else ""
+        # Find the first non-empty string as grantor (skip blank checkbox/icon cells)
+        non_empty = [p for p in parts if p]
+        if len(non_empty) < 3:
+            return None
+
+        grantor   = non_empty[0] if len(non_empty) > 0 else ""
+        grantee   = non_empty[1] if len(non_empty) > 1 else ""
         filed_raw = ""
         doc_num   = ""
         legal     = ""
 
-        for i, p in enumerate(parts):
+        # Find date field
+        for i, p in enumerate(non_empty):
             if re.match(r"\d{1,2}/\d{1,2}/\d{4}", p):
                 filed_raw = p
-                doc_num   = parts[i + 1] if i + 1 < len(parts) else ""
-                legal     = parts[i + 3] if i + 3 < len(parts) else ""
+                doc_num   = non_empty[i + 1] if i + 1 < len(non_empty) else ""
+                # legal is after the second date field (--/--/--)
+                legal     = non_empty[i + 3] if i + 3 < len(non_empty) else ""
                 break
 
-        if not grantor:
+        if not grantor or not filed_raw:
             return None
 
         search_url = (f"{BASE_URL}/results?department=RP&_docTypes={doc_code}"
@@ -357,29 +375,12 @@ async def scrape_all_playwright(date_from: str, date_to: str) -> list:
                         () => {
                             const texts = [];
                             const rows = document.querySelectorAll('tbody tr');
-                            if (rows.length > 0) {
-                                rows.forEach(row => {
-                                    const cells = row.querySelectorAll('td');
-                                    if (cells.length >= 4) {
-                                        const parts = [];
-                                        cells.forEach(td => parts.push(td.innerText.trim()));
-                                        texts.push(parts.join('\\t'));
-                                    }
-                                });
-                                return texts;
-                            }
-                            const items = document.querySelectorAll(
-                                '[class*="group-item"], [class*="doc-row"], [class*="instrument-row"]'
-                            );
-                            items.forEach(el => {
-                                const cells = el.querySelectorAll('[class*="cell"], [class*="col"], td, [class*="field"]');
-                                if (cells.length >= 3) {
+                            rows.forEach(row => {
+                                const cells = row.querySelectorAll('td');
+                                if (cells.length >= 5) {
                                     const parts = [];
-                                    cells.forEach(c => parts.push(c.innerText.trim()));
+                                    cells.forEach(td => parts.push(td.innerText.trim()));
                                     texts.push(parts.join('\\t'));
-                                } else {
-                                    const t = el.innerText.trim();
-                                    if (t && t.length > 10 && t.length < 500) texts.push(t);
                                 }
                             });
                             return texts;
