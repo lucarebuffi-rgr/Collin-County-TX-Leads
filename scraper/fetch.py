@@ -223,7 +223,6 @@ def parse_text_block(text: str, doc_code: str, cat: str, cat_label: str, dt_from
         if len(parts) < 5:
             return None
 
-        # Find the first non-empty string as grantor (skip blank checkbox/icon cells)
         non_empty = [p for p in parts if p]
         if len(non_empty) < 3:
             return None
@@ -234,12 +233,10 @@ def parse_text_block(text: str, doc_code: str, cat: str, cat_label: str, dt_from
         doc_num   = ""
         legal     = ""
 
-        # Find date field
         for i, p in enumerate(non_empty):
             if re.match(r"\d{1,2}/\d{1,2}/\d{4}", p):
                 filed_raw = p
                 doc_num   = non_empty[i + 1] if i + 1 < len(non_empty) else ""
-                # legal is after the second date field (--/--/--)
                 legal     = non_empty[i + 3] if i + 3 < len(non_empty) else ""
                 break
 
@@ -290,7 +287,8 @@ async def scrape_all_playwright(date_from: str, date_to: str) -> list:
                    f"?department=RP"
                    f"&_docTypes={doc_code}"
                    f"&recordedDateRange={dt_from},{dt_to}"
-                   f"&searchType=advancedSearch")
+                   f"&searchType=advancedSearch"
+                   f"&limit=200")
 
             log.info(f"  Scraping {doc_code} ({cat_label}) …")
 
