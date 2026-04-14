@@ -291,7 +291,7 @@ async def scrape_doc_type(browser, doc_code: str, cat: str, cat_label: str,
 
         try:
             await page.goto(url, timeout=30_000)
-            await asyncio.sleep(15)
+            await asyncio.sleep(20)
 
             js_result = await page.evaluate("""
                 () => {
@@ -310,8 +310,26 @@ async def scrape_doc_type(browser, doc_code: str, cat: str, cat_label: str,
             """)
 
             if not js_result:
-                log.info(f"    No rows found — done paginating {doc_code}")
-                break
+                log.info(f"    No rows — retrying after 10s...")
+                await asyncio.sleep(10)
+                js_result = await page.evaluate("""
+                    () => {
+                        const texts = [];
+                        const rows = document.querySelectorAll('tbody tr');
+                        rows.forEach(row => {
+                            const cells = row.querySelectorAll('td');
+                            if (cells.length >= 5) {
+                                const parts = [];
+                                cells.forEach(td => parts.push(td.innerText.trim()));
+                                texts.push(parts.join('\\t'));
+                            }
+                        });
+                        return texts;
+                    }
+                """)
+                if not js_result:
+                    log.info(f"    Still no rows — done paginating {doc_code}")
+                    break
 
             log.info(f"    Got {len(js_result)} rows")
             page_records = []
