@@ -57,7 +57,7 @@ DOC_TYPES = {
 # For these types the GRANTEE is the property owner
 GRANTEE_IS_OWNER = {"LIEN", "CSL", "FTL", "STL", "JD", "AJ"}
 
-LOOKBACK_DAYS   = 101
+LOOKBACK_DAYS   = 14
 REQUEST_TIMEOUT = 60
 PAGE_LIMIT      = 250  # max results per page on Collin PublicSearch
 
