@@ -137,7 +137,7 @@ def build_parcel_lookup() -> dict:
 
         while True:
             params = {
-                "where":             "propCategoryCode='R'",
+                "where":             "propCategoryCode IN ('A', 'B')",
                 "outFields":         "ownerName,situsBldgNum,situsStreetPrefix,situsStreetName,situsStreetSuffix,situsCity,situsZip,ownerAddrLine1,ownerAddrCity,ownerAddrState,ownerAddrZip",
                 "returnGeometry":    "false",
                 "f":                 "json",
