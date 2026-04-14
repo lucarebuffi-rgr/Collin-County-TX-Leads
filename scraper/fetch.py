@@ -137,16 +137,16 @@ def build_parcel_lookup() -> dict:
 
         while True:
             params = {
-                "where":             "propCategoryCode='R'",
+                "where":             "propCategoryCode IN ('A','B')",
                 "outFields":         "ownerName,situsBldgNum,situsStreetPrefix,situsStreetName,situsStreetSuffix,situsCity,situsZip,ownerAddrLine1,ownerAddrCity,ownerAddrState,ownerAddrZip",
                 "returnGeometry":    "false",
                 "f":                 "json",
                 "resultOffset":      offset,
                 "resultRecordCount": batch,
             }
-            r = session.get(base, params=params, timeout=REQUEST_TIMEOUT)
-            if r.status_code != 200:
-                log.warning(f"ArcGIS API error: {r.status_code}")
+            r = session.post(base, data=params, timeout=REQUEST_TIMEOUT)
+            if r.status_code not in (200, 201):
+                log.warning(f"ArcGIS API error: {r.status_code} — {r.text[:200]}")
                 break
 
             data     = r.json()
