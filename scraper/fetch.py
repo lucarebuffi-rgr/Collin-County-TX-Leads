@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+    #!/usr/bin/env python3
 """
 Collin County TX – Motivated Seller Lead Scraper
 Intercepts API calls and parses JS state from PublicSearch React app.
@@ -57,13 +57,22 @@ DOC_TYPES = {
 # For these types the GRANTEE is the property owner
 GRANTEE_IS_OWNER = {"LIEN", "CSL", "FTL", "STL", "JD", "AJ"}
 
-LOOKBACK_DAYS   = 14
+LOOKBACK_DAYS   = 101
 REQUEST_TIMEOUT = 60
-PAGE_LIMIT      = 250  # max results per page on Collin PublicSearch
 
 # Suffixes to strip before name comparison
 NAME_SUFFIXES = {"JR", "SR", "II", "III", "IV", "V", "ESQ", "TRUSTEE", "TR",
                  "ETAL", "ET", "AL", "ET AL", "ETUX", "ET UX", "ESTATE"}
+
+# Entities to filter out
+ENTITY_FILTERS = (
+    "LLC", "INC", "CORP", "LTD", "LP ", "L.P.", "TRUST", "ASSOC", "HOMEOWNERS",
+    "STATE OF", "CITY OF", "COUNTY OF", "DISTRICT", "MUNICIPALITY", "DEPT ",
+    "ISD", "UTILITY", "AUTHORITY", "COMMISSION", "FEDERAL", "NATIONAL BANK",
+    "MORTGAGE", "FINANCIAL", "INVESTMENT", "PROPERTIES", "REALTY", "HOLDINGS",
+    "PARTNERS", "GROUP", "SERVICES", "MANAGEMENT", "SOLUTIONS", "ENTERPRISES",
+    "N/A", "UNKNOWN", "PUBLIC", "ATTY GEN", "ATTY/GEN"
+)
 
 
 def parse_date(raw: str) -> Optional[str]:
@@ -121,6 +130,18 @@ def normalize_for_fuzzy(name: str) -> tuple:
     return tokens[0], set(tokens[1:])
 
 
+def is_entity(name: str) -> bool:
+    """Returns True if name appears to be a business/government entity, not a person."""
+    n = name.strip().upper()
+    if not n or n in ("N/A", "NA", "UNKNOWN", "PUBLIC", ""):
+        return True
+    # Must have at least 2 tokens that look like a person name
+    tokens = [t for t in re.sub(r"[^\w\s]", "", n).split() if len(t) > 1]
+    if len(tokens) < 2:
+        return True
+    return any(x in n for x in ENTITY_FILTERS)
+
+
 # ── PARCEL LOOKUP ─────────────────────────────────────────────────────────
 
 def build_parcel_lookup() -> dict:
@@ -158,7 +179,7 @@ def build_parcel_lookup() -> dict:
             for feat in features:
                 att = feat.get("attributes", {})
                 owner_name = (att.get("ownerName") or "").upper().strip()
-                if not owner_name:
+                if not owner_name or is_entity(owner_name):
                     continue
 
                 bldg_num     = att.get("situsBldgNum", "")      or ""
@@ -172,6 +193,10 @@ def build_parcel_lookup() -> dict:
                 mail_city    = att.get("ownerAddrCity", "")  or ""
                 mail_state   = att.get("ownerAddrState", "") or "TX"
                 mail_zip     = att.get("ownerAddrZip", "")   or ""
+
+                # Skip parcels with no property address
+                if not prop_address:
+                    continue
 
                 parcel = {
                     "prop_address": prop_address,
@@ -268,7 +293,6 @@ def parse_text_block(text: str, doc_code: str, cat: str, cat_label: str, dt_from
 
 async def scrape_doc_type(browser, doc_code: str, cat: str, cat_label: str,
                            dt_from: str, dt_to: str) -> list:
-    """Scrape all pages for a single doc type with pagination."""
     records = []
     offset  = 0
 
@@ -278,7 +302,7 @@ async def scrape_doc_type(browser, doc_code: str, cat: str, cat_label: str,
                f"&_docTypes={doc_code}"
                f"&recordedDateRange={dt_from},{dt_to}"
                f"&searchType=advancedSearch"
-               f"&limit={PAGE_LIMIT}"
+               f"&limit=250"
                f"&offset={offset}")
 
         log.info(f"  {doc_code} offset={offset} …")
@@ -332,20 +356,16 @@ async def scrape_doc_type(browser, doc_code: str, cat: str, cat_label: str,
                     break
 
             log.info(f"    Got {len(js_result)} rows")
-            page_records = []
             for text in js_result:
                 rec = parse_text_block(text, doc_code, cat, cat_label, dt_from, dt_to)
                 if rec:
-                    page_records.append(rec)
+                    records.append(rec)
 
-            records.extend(page_records)
-
-            # If we got fewer than PAGE_LIMIT rows, we're on the last page
-            if len(js_result) < PAGE_LIMIT:
+            if len(js_result) < 250:
                 log.info(f"    Last page for {doc_code}")
                 break
 
-            offset += PAGE_LIMIT
+            offset += 250
 
         except Exception as e:
             log.warning(f"    Error scraping {doc_code} offset={offset}: {e}")
@@ -374,11 +394,9 @@ async def scrape_all_playwright(date_from: str, date_to: str) -> list:
 
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
-
         for doc_code, (cat, cat_label) in DOC_TYPES.items():
             recs = await scrape_doc_type(browser, doc_code, cat, cat_label, dt_from, dt_to)
             all_records.extend(recs)
-
         await browser.close()
 
     return all_records
@@ -440,25 +458,41 @@ def enrich_with_parcel(records: list, lookup: dict) -> list:
             owner = rec.get("grantor", "").upper().strip()
         parcel = None
 
+        # Skip entities immediately — no point looking up
+        if is_entity(owner):
+            rec.setdefault("prop_address", "")
+            rec.setdefault("prop_city",    "")
+            rec.setdefault("prop_state",   "TX")
+            rec.setdefault("prop_zip",     "")
+            rec.setdefault("mail_address", "")
+            rec.setdefault("mail_city",    "")
+            rec.setdefault("mail_state",   "TX")
+            rec.setdefault("mail_zip",     "")
+            continue
+
+        # Exact match first
         for variant in name_variants(owner):
             parcel = lookup.get(variant)
             if parcel:
                 break
 
+        # Fuzzy match — tightened: require BOTH last name AND at least one first name token
         if not parcel and owner:
             o_last, o_firsts = normalize_for_fuzzy(owner)
-            if o_last:
+            if o_last and o_firsts:  # Must have both last AND first name
                 for c_last, c_firsts, candidate in fuzzy_index:
                     if c_last != o_last:
                         continue
-                    smaller = o_firsts if len(o_firsts) <= len(c_firsts) else c_firsts
-                    larger  = o_firsts if len(o_firsts) >  len(c_firsts) else c_firsts
-                    if not smaller or smaller.issubset(larger):
+                    if not c_firsts:  # Skip single-name entries
+                        continue
+                    # Require at least one first name token to match
+                    if o_firsts & c_firsts:  # intersection — at least one token matches
                         parcel = candidate
                         break
+                    # Sequence match only if first names are similar
                     o_str = " ".join(sorted(o_firsts))
                     c_str = " ".join(sorted(c_firsts))
-                    if o_str and c_str and SequenceMatcher(None, o_str, c_str).ratio() >= 0.82:
+                    if o_str and c_str and SequenceMatcher(None, o_str, c_str).ratio() >= 0.85:
                         parcel = candidate
                         break
 
@@ -525,7 +559,6 @@ def build_output(raw_records: list, date_from: str, date_to: str) -> dict:
     for raw in raw_records:
         try:
             dtype = raw.get("doc_type", "")
-
             if dtype in GRANTEE_IS_OWNER:
                 owner   = raw.get("grantee", "")
                 grantee = raw.get("grantor", "")
@@ -564,10 +597,13 @@ def build_output(raw_records: list, date_from: str, date_to: str) -> dict:
     # Remove records with no address
     out_records = [r for r in out_records if r.get("prop_address") or r.get("mail_address")]
 
-    # Remove LLC/corp owned properties
+    # Remove blank/N/A/entity owners
+    out_records = [r for r in out_records if not is_entity(r.get("owner", ""))]
+
+    # Remove LLC/corp/government owned properties
     out_records = [r for r in out_records if not any(
         x in (r.get("owner", "")).upper()
-        for x in ("LLC", "INC", "CORP", "LTD", "LP ", "L.P.", "TRUST", "ASSOC", "HOMEOWNERS")
+        for x in ENTITY_FILTERS
     )]
 
     out_records.sort(key=lambda r: (-r["score"], r.get("filed", "") or ""))
