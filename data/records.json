@@ -1,12 +1,12 @@
 {
-  "fetched_at": "2026-04-16T15:57:20.954892Z",
+  "fetched_at": "2026-04-17T10:49:45.444092Z",
   "source": "Collin County TX \u2013 PublicSearch",
   "date_range": {
-    "from": "04/06/2026",
-    "to": "04/16/2026"
+    "from": "04/07/2026",
+    "to": "04/17/2026"
   },
-  "total": 165,
-  "with_address": 165,
+  "total": 150,
+  "with_address": 150,
   "records": [
     {
       "doc_num": "2026000045109",
@@ -26,558 +26,12 @@
       "mail_city": "PLANO",
       "mail_state": "TX",
       "mail_zip": "75023-6814",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LP&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LP&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lis pendens",
         "New this week"
       ],
       "score": 80,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000043903",
-      "doc_type": "AJ",
-      "filed": "2026-04-06",
-      "cat": "judgment",
-      "cat_label": "Abstract of Judgment",
-      "owner": "RODRIGUEZ JANIE A",
-      "grantee": "CITIBANK NA",
-      "amount": null,
-      "legal": "N/A",
-      "prop_address": "1017  OAK ST",
-      "prop_city": "MCKINNEY",
-      "prop_state": "TX",
-      "prop_zip": "75069",
-      "mail_address": "1017 OAK ST",
-      "mail_city": "MCKINNEY",
-      "mail_state": "TX",
-      "mail_zip": "75069-2973",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Judgment lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000043830",
-      "doc_type": "AJ",
-      "filed": "2026-04-06",
-      "cat": "judgment",
-      "cat_label": "Abstract of Judgment",
-      "owner": "WRIGHT TYLER O",
-      "grantee": "CAPITAL ONE NA",
-      "amount": null,
-      "legal": "N/A",
-      "prop_address": "282  TALLGRASS DR",
-      "prop_city": "LAVON",
-      "prop_state": "TX",
-      "prop_zip": "75166",
-      "mail_address": "282 TALLGRASS DR",
-      "mail_city": "LAVON",
-      "mail_state": "TX",
-      "mail_zip": "75166-1205",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Judgment lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000043344",
-      "doc_type": "AJ",
-      "filed": "2026-04-06",
-      "cat": "judgment",
-      "cat_label": "Abstract of Judgment",
-      "owner": "MAY COLLIN",
-      "grantee": "AMERICAN EXPRESS NATIONAL BANK",
-      "amount": null,
-      "legal": "N/A",
-      "prop_address": "5507  INVERRARY CT",
-      "prop_city": "DALLAS",
-      "prop_state": "TX",
-      "prop_zip": "75287",
-      "mail_address": "5507 INVERRARY CT",
-      "mail_city": "DALLAS",
-      "mail_state": "TX",
-      "mail_zip": "75287-7416",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Judgment lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000043347",
-      "doc_type": "AJ",
-      "filed": "2026-04-06",
-      "cat": "judgment",
-      "cat_label": "Abstract of Judgment",
-      "owner": "ESPINOZA ALFREDO JR",
-      "grantee": "CAPITAL ONE NA",
-      "amount": null,
-      "legal": "N/A",
-      "prop_address": "4488  COUNTY ROAD 494",
-      "prop_city": "PRINCETON",
-      "prop_state": "TX",
-      "prop_zip": "75407",
-      "mail_address": "4488 COUNTY ROAD 494",
-      "mail_city": "PRINCETON",
-      "mail_state": "TX",
-      "mail_zip": "75407-2746",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Judgment lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000043343",
-      "doc_type": "AJ",
-      "filed": "2026-04-06",
-      "cat": "judgment",
-      "cat_label": "Abstract of Judgment",
-      "owner": "PEREZ EULOJIO",
-      "grantee": "AMERICAN EXPRESS NATIONAL BANK",
-      "amount": null,
-      "legal": "N/A",
-      "prop_address": "1617  SCOTTSDALE DR",
-      "prop_city": "PLANO",
-      "prop_state": "TX",
-      "prop_zip": "75023",
-      "mail_address": "1617 SCOTTSDALE DR",
-      "mail_city": "PLANO",
-      "mail_state": "TX",
-      "mail_zip": "75023-7474",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Judgment lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000043833",
-      "doc_type": "AJ",
-      "filed": "2026-04-06",
-      "cat": "judgment",
-      "cat_label": "Abstract of Judgment",
-      "owner": "ARRINGTON BOBBY",
-      "grantee": "SOFI LENDING CORP",
-      "amount": null,
-      "legal": "N/A",
-      "prop_address": "1645  SAVAGE DR",
-      "prop_city": "PLANO",
-      "prop_state": "TX",
-      "prop_zip": "75023",
-      "mail_address": "1645 SAVAGE DR",
-      "mail_city": "PLANO",
-      "mail_state": "TX",
-      "mail_zip": "75023-1832",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Judgment lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000043817",
-      "doc_type": "AJ",
-      "filed": "2026-04-06",
-      "cat": "judgment",
-      "cat_label": "Abstract of Judgment",
-      "owner": "YOUNG WESLEY RAGAN",
-      "grantee": "LOCUST POINT SENIORS HOUSING DEBT FUND II LP",
-      "amount": null,
-      "legal": "N/A",
-      "prop_address": "1001  SHENANDOAH DR",
-      "prop_city": "PLANO",
-      "prop_state": "TX",
-      "prop_zip": "75023",
-      "mail_address": "4523 MARINER DR",
-      "mail_city": "FRISCO",
-      "mail_state": "TX",
-      "mail_zip": "75034-6607",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Judgment lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000043361",
-      "doc_type": "AJ",
-      "filed": "2026-04-06",
-      "cat": "judgment",
-      "cat_label": "Abstract of Judgment",
-      "owner": "PULLEN BRENDA",
-      "grantee": "AMERICAN EXPRESS NATIONAL BANK",
-      "amount": null,
-      "legal": "N/A",
-      "prop_address": "6626  TWILIGHT DR",
-      "prop_city": "MCKINNEY",
-      "prop_state": "TX",
-      "prop_zip": "75071",
-      "mail_address": "PO BOX 561376",
-      "mail_city": "THE COLONY",
-      "mail_state": "TX",
-      "mail_zip": "75056-6376",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Judgment lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000043364",
-      "doc_type": "AJ",
-      "filed": "2026-04-06",
-      "cat": "judgment",
-      "cat_label": "Abstract of Judgment",
-      "owner": "HAMPTON MICHELE",
-      "grantee": "CAPITAL ONE NA",
-      "amount": null,
-      "legal": "N/A",
-      "prop_address": "1610  DEER FIELD LN",
-      "prop_city": "WYLIE",
-      "prop_state": "TX",
-      "prop_zip": "75098",
-      "mail_address": "1610 DEER FIELD LN",
-      "mail_city": "WYLIE",
-      "mail_state": "TX",
-      "mail_zip": "75098-0839",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Judgment lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000043360",
-      "doc_type": "AJ",
-      "filed": "2026-04-06",
-      "cat": "judgment",
-      "cat_label": "Abstract of Judgment",
-      "owner": "CHOI LINDA Y",
-      "grantee": "DISCOVER BANK",
-      "amount": null,
-      "legal": "N/A",
-      "prop_address": "625  ANSLEY WAY",
-      "prop_city": "ALLEN",
-      "prop_state": "TX",
-      "prop_zip": "75013",
-      "mail_address": "625 ANSLEY WAY",
-      "mail_city": "ALLEN",
-      "mail_state": "TX",
-      "mail_zip": "75013-5106",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Judgment lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000043363",
-      "doc_type": "AJ",
-      "filed": "2026-04-06",
-      "cat": "judgment",
-      "cat_label": "Abstract of Judgment",
-      "owner": "THOMAS ROBIN",
-      "grantee": "CAPITAL ONE NA",
-      "amount": null,
-      "legal": "N/A",
-      "prop_address": "3404  VIBURNUM DR",
-      "prop_city": "WYLIE",
-      "prop_state": "TX",
-      "prop_zip": "75098",
-      "mail_address": "3404 VIBURNUM DR",
-      "mail_city": "WYLIE",
-      "mail_state": "TX",
-      "mail_zip": "75098-7456",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Judgment lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000043818",
-      "doc_type": "AJ",
-      "filed": "2026-04-06",
-      "cat": "judgment",
-      "cat_label": "Abstract of Judgment",
-      "owner": "REMINGTON MICHAEL PATRICK",
-      "grantee": "LOCUST POINT SENIORS HOUSING DEBT FUND II LP",
-      "amount": null,
-      "legal": "N/A",
-      "prop_address": "5409  RAINCREST DR",
-      "prop_city": "MCKINNEY",
-      "prop_state": "TX",
-      "prop_zip": "75071",
-      "mail_address": "291 OAKWOOD TRL",
-      "mail_city": "FAIRVIEW",
-      "mail_state": "TX",
-      "mail_zip": "75069-1545",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Judgment lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000043332",
-      "doc_type": "AH",
-      "filed": "2026-04-06",
-      "cat": "probate",
-      "cat_label": "Affidavit of Heirship",
-      "owner": "LEE ROSEMARY",
-      "grantee": "SHI PING JUN DECEASED",
-      "amount": null,
-      "legal": "Subdivision - Name: TRAILS PLANO Lot: 78 Block: D Reference - I/186",
-      "prop_address": "5513  SAINT ANDREWS CT",
-      "prop_city": "PLANO",
-      "prop_state": "TX",
-      "prop_zip": "75093",
-      "mail_address": "5513 SAINT ANDREWS CT",
-      "mail_city": "PLANO",
-      "mail_state": "TX",
-      "mail_zip": "75093-4235",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Probate / estate",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000043325",
-      "doc_type": "AH",
-      "filed": "2026-04-06",
-      "cat": "probate",
-      "cat_label": "Affidavit of Heirship",
-      "owner": "LEE JOHNNY KWONG-MING",
-      "grantee": "SHI PING JUN DECEASED",
-      "amount": null,
-      "legal": "Subdivision - Name: TRAILS PLANO Lot: 78 Block: D Reference - I/186",
-      "prop_address": "806  BAYOU CT",
-      "prop_city": "WYLIE",
-      "prop_state": "TX",
-      "prop_zip": "75098",
-      "mail_address": "806 BAYOU CT",
-      "mail_city": "WYLIE",
-      "mail_state": "TX",
-      "mail_zip": "75098-7310",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Probate / estate",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000043334",
-      "doc_type": "AH",
-      "filed": "2026-04-06",
-      "cat": "probate",
-      "cat_label": "Affidavit of Heirship",
-      "owner": "LEE JOHNNY KWONG-MING",
-      "grantee": "SHI PING JUN DECEASED",
-      "amount": null,
-      "legal": "Subdivision - Name: TRAILS PLANO Lot: 78 Block: D Reference - I/186",
-      "prop_address": "806  BAYOU CT",
-      "prop_city": "WYLIE",
-      "prop_state": "TX",
-      "prop_zip": "75098",
-      "mail_address": "806 BAYOU CT",
-      "mail_city": "WYLIE",
-      "mail_state": "TX",
-      "mail_zip": "75098-7310",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Probate / estate",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000043323",
-      "doc_type": "AH",
-      "filed": "2026-04-06",
-      "cat": "probate",
-      "cat_label": "Affidavit of Heirship",
-      "owner": "LEE ROSEMARY",
-      "grantee": "SHI PING JUN DECEASED",
-      "amount": null,
-      "legal": "Subdivision - Name: TRAILS PLANO Lot: 78 Block: D Reference - I/186",
-      "prop_address": "5513  SAINT ANDREWS CT",
-      "prop_city": "PLANO",
-      "prop_state": "TX",
-      "prop_zip": "75093",
-      "mail_address": "5513 SAINT ANDREWS CT",
-      "mail_city": "PLANO",
-      "mail_state": "TX",
-      "mail_zip": "75093-4235",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Probate / estate",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000043404",
-      "doc_type": "LIEN",
-      "filed": "2026-04-06",
-      "cat": "lien",
-      "cat_label": "Lien",
-      "owner": "HAGEY TROY A",
-      "grantee": "DOMINION AT PANTHER CREEK HOMEOWNERS ASN INC",
-      "amount": null,
-      "legal": "Subdivision - Name: DOMINION PANTHER CREEK #3 Lot: 2 Block: J Reference - 2006/457",
-      "prop_address": "10006  STANCIL LN",
-      "prop_city": "FRISCO",
-      "prop_state": "TX",
-      "prop_zip": "75035",
-      "mail_address": "10006 STANCIL LN",
-      "mail_city": "FRISCO",
-      "mail_state": "TX",
-      "mail_zip": "75035-8872",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000043405",
-      "doc_type": "LIEN",
-      "filed": "2026-04-06",
-      "cat": "lien",
-      "cat_label": "Lien",
-      "owner": "THIONG PETER",
-      "grantee": "CASCADES ASN OF HOMEOWNERS INC",
-      "amount": null,
-      "legal": "Subdivision - Name: CASCADES 1 WYL Lot: 6 Block: B Reference - N/944",
-      "prop_address": "1901  CROOKED CREEK CT",
-      "prop_city": "WYLIE",
-      "prop_state": "TX",
-      "prop_zip": "75098",
-      "mail_address": "1901 CROOKED CREEK CT",
-      "mail_city": "WYLIE",
-      "mail_state": "TX",
-      "mail_zip": "75098-7996",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000043406",
-      "doc_type": "LIEN",
-      "filed": "2026-04-06",
-      "cat": "lien",
-      "cat_label": "Lien",
-      "owner": "THIONG PETER",
-      "grantee": "CASCADES ASN OF HOMEOWNERS INC",
-      "amount": null,
-      "legal": "Subdivision - Name: CASCADES 1 WYL Lot: 6 Block: B Reference - N/944",
-      "prop_address": "1901  CROOKED CREEK CT",
-      "prop_city": "WYLIE",
-      "prop_state": "TX",
-      "prop_zip": "75098",
-      "mail_address": "1901 CROOKED CREEK CT",
-      "mail_city": "WYLIE",
-      "mail_state": "TX",
-      "mail_zip": "75098-7996",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000043506",
-      "doc_type": "LIEN",
-      "filed": "2026-04-06",
-      "cat": "lien",
-      "cat_label": "Lien",
-      "owner": "MUSTAFA SYED J",
-      "grantee": "BRISTOL PARK HOMEOWNERS ASN",
-      "amount": null,
-      "legal": "Subdivision - Name: ESTATES FOUNTAIN CREEK II-IV PLANO Lot: 23 Block: F Reference - J/501",
-      "prop_address": "1026  MANCHESTER DR",
-      "prop_city": "WYLIE",
-      "prop_state": "TX",
-      "prop_zip": "75098",
-      "mail_address": "1026 MANCHESTER DR",
-      "mail_city": "WYLIE",
-      "mail_state": "TX",
-      "mail_zip": "75098-1196",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000043849",
-      "doc_type": "LIEN",
-      "filed": "2026-04-06",
-      "cat": "lien",
-      "cat_label": "Lien",
-      "owner": "WEST TERRI S",
-      "grantee": "PRESTON POINTE HOMEOWNERS ASN INC",
-      "amount": null,
-      "legal": "Subdivision - Name: PRESTON POINT PLANO Lot: 19 Block: C Reference - F/529",
-      "prop_address": "1332  EXETER DR",
-      "prop_city": "PLANO",
-      "prop_state": "TX",
-      "prop_zip": "75093",
-      "mail_address": "17194 PRESTON RD # 102-326",
-      "mail_city": "DALLAS",
-      "mail_state": "TX",
-      "mail_zip": "75248-1221",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Lien",
-        "New this week"
-      ],
-      "score": 60,
       "_demo": false
     },
     {
@@ -598,7 +52,7 @@
       "mail_city": "ALLEN",
       "mail_state": "TX",
       "mail_zip": "75002-3713",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -624,33 +78,7 @@
       "mail_city": "FRISCO",
       "mail_state": "TX",
       "mail_zip": "75035-6920",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Tax lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000044508",
-      "doc_type": "FTL",
-      "filed": "2026-04-07",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "LEON MILTON VELASQUEZ",
-      "grantee": "U S A INTERNAL REVENUE SERVICE",
-      "amount": null,
-      "legal": "N/A",
-      "prop_address": "160  TARVIN RD",
-      "prop_city": "MCKINNEY",
-      "prop_state": "TX",
-      "prop_zip": "75071",
-      "mail_address": "160 TARVIN RD",
-      "mail_city": "MCKINNEY",
-      "mail_state": "TX",
-      "mail_zip": "75071-4142",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -676,33 +104,7 @@
       "mail_city": "PLANO",
       "mail_state": "TX",
       "mail_zip": "75074-4518",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Tax lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000044519",
-      "doc_type": "FTL",
-      "filed": "2026-04-07",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "NUTT HOUSTON D",
-      "grantee": "U S A INTERNAL REVENUE SERVICE",
-      "amount": null,
-      "legal": "N/A",
-      "prop_address": "4000  SUMMIT CT",
-      "prop_city": "FAIRVIEW",
-      "prop_state": "TX",
-      "prop_zip": "75069",
-      "mail_address": "4000 SUMMIT CT",
-      "mail_city": "FAIRVIEW",
-      "mail_state": "TX",
-      "mail_zip": "75069-1183",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -728,7 +130,7 @@
       "mail_city": "MCKINNEY",
       "mail_state": "TX",
       "mail_zip": "75071-4437",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -737,24 +139,50 @@
       "_demo": false
     },
     {
-      "doc_num": "2026000044357",
+      "doc_num": "2026000044519",
       "doc_type": "FTL",
       "filed": "2026-04-07",
       "cat": "lien",
       "cat_label": "Federal Tax Lien",
-      "owner": "JOHNSON ROSE MARIE",
+      "owner": "NUTT HOUSTON D",
       "grantee": "U S A INTERNAL REVENUE SERVICE",
       "amount": null,
       "legal": "N/A",
-      "prop_address": "14778  BLAKEHILL DR",
-      "prop_city": "FRISCO",
+      "prop_address": "4000  SUMMIT CT",
+      "prop_city": "FAIRVIEW",
       "prop_state": "TX",
-      "prop_zip": "75035",
-      "mail_address": "14778 BLAKEHILL DR",
-      "mail_city": "FRISCO",
+      "prop_zip": "75069",
+      "mail_address": "4000 SUMMIT CT",
+      "mail_city": "FAIRVIEW",
       "mail_state": "TX",
-      "mail_zip": "75035-4813",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "mail_zip": "75069-1183",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
+      "flags": [
+        "Tax lien",
+        "New this week"
+      ],
+      "score": 60,
+      "_demo": false
+    },
+    {
+      "doc_num": "2026000044508",
+      "doc_type": "FTL",
+      "filed": "2026-04-07",
+      "cat": "lien",
+      "cat_label": "Federal Tax Lien",
+      "owner": "LEON MILTON VELASQUEZ",
+      "grantee": "U S A INTERNAL REVENUE SERVICE",
+      "amount": null,
+      "legal": "N/A",
+      "prop_address": "160  TARVIN RD",
+      "prop_city": "MCKINNEY",
+      "prop_state": "TX",
+      "prop_zip": "75071",
+      "mail_address": "160 TARVIN RD",
+      "mail_city": "MCKINNEY",
+      "mail_state": "TX",
+      "mail_zip": "75071-4142",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -780,7 +208,7 @@
       "mail_city": "FRISCO",
       "mail_state": "TX",
       "mail_zip": "75035-4024",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -806,7 +234,33 @@
       "mail_city": "PROSPER",
       "mail_state": "TX",
       "mail_zip": "75078-8751",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
+      "flags": [
+        "Tax lien",
+        "New this week"
+      ],
+      "score": 60,
+      "_demo": false
+    },
+    {
+      "doc_num": "2026000044357",
+      "doc_type": "FTL",
+      "filed": "2026-04-07",
+      "cat": "lien",
+      "cat_label": "Federal Tax Lien",
+      "owner": "JOHNSON ROSE MARIE",
+      "grantee": "U S A INTERNAL REVENUE SERVICE",
+      "amount": null,
+      "legal": "N/A",
+      "prop_address": "14778  BLAKEHILL DR",
+      "prop_city": "FRISCO",
+      "prop_state": "TX",
+      "prop_zip": "75035",
+      "mail_address": "14778 BLAKEHILL DR",
+      "mail_city": "FRISCO",
+      "mail_state": "TX",
+      "mail_zip": "75035-4813",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -832,7 +286,7 @@
       "mail_city": "MCKINNEY",
       "mail_state": "TX",
       "mail_zip": "75071-4142",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -858,7 +312,7 @@
       "mail_city": "PROSPER",
       "mail_state": "TX",
       "mail_zip": "75078-2525",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -876,15 +330,15 @@
       "grantee": "U S A INTERNAL REVENUE SERVICE",
       "amount": null,
       "legal": "N/A",
-      "prop_address": "507  PADDOCK LN",
-      "prop_city": "CELINA",
+      "prop_address": "2625  LAKE MEADOW DR",
+      "prop_city": "MCKINNEY",
       "prop_state": "TX",
-      "prop_zip": "75009",
-      "mail_address": "507 PADDOCK LN",
-      "mail_city": "CELINA",
+      "prop_zip": "75071",
+      "mail_address": "9732 WINDBURN DR",
+      "mail_city": "PLANO",
       "mail_state": "TX",
-      "mail_zip": "75009-4642",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "mail_zip": "75025-5418",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -902,15 +356,15 @@
       "grantee": "U S A",
       "amount": null,
       "legal": "N/A",
-      "prop_address": "10715  DRY CREEK LN",
-      "prop_city": "FRISCO",
+      "prop_address": "2033  WEBLEY DR",
+      "prop_city": "PLANO",
       "prop_state": "TX",
-      "prop_zip": "75035",
-      "mail_address": "10715 DRY CREEK LN",
-      "mail_city": "FRISCO",
+      "prop_zip": "75023",
+      "mail_address": "2033 WEBLEY DR",
+      "mail_city": "PLANO",
       "mail_state": "TX",
-      "mail_zip": "75035-8568",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "mail_zip": "75023-1774",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -936,7 +390,7 @@
       "mail_city": "FRISCO",
       "mail_state": "TX",
       "mail_zip": "75035-6356",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=STL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=STL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -962,7 +416,7 @@
       "mail_city": "ANNA",
       "mail_state": "TX",
       "mail_zip": "75409-5467",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=STL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=STL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -988,7 +442,7 @@
       "mail_city": "ALLEN",
       "mail_state": "TX",
       "mail_zip": "75013-5906",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=STL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=STL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -1014,7 +468,7 @@
       "mail_city": "ALLEN",
       "mail_state": "TX",
       "mail_zip": "75002-2753",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=STL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=STL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -1040,7 +494,7 @@
       "mail_city": "ALLEN",
       "mail_state": "TX",
       "mail_zip": "75013-5906",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=STL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=STL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -1066,7 +520,7 @@
       "mail_city": "PLANO",
       "mail_state": "TX",
       "mail_zip": "75075-4201",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -1092,7 +546,7 @@
       "mail_city": "WYLIE",
       "mail_state": "TX",
       "mail_zip": "75098-7168",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -1118,59 +572,7 @@
       "mail_city": "FARMERSVILLE",
       "mail_state": "TX",
       "mail_zip": "75442-5004",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Judgment lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000044930",
-      "doc_type": "AJ",
-      "filed": "2026-04-07",
-      "cat": "judgment",
-      "cat_label": "Abstract of Judgment",
-      "owner": "CLOSE DAVID",
-      "grantee": "MIDLAND CREDIT MANAGEMENT INC",
-      "amount": null,
-      "legal": "N/A",
-      "prop_address": "448  WINDMILL DR",
-      "prop_city": "LAVON",
-      "prop_state": "TX",
-      "prop_zip": "75166",
-      "mail_address": "448 WINDMILL DR",
-      "mail_city": "LAVON",
-      "mail_state": "TX",
-      "mail_zip": "75166-1625",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Judgment lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000044781",
-      "doc_type": "AJ",
-      "filed": "2026-04-07",
-      "cat": "judgment",
-      "cat_label": "Abstract of Judgment",
-      "owner": "MALDONADO JOE",
-      "grantee": "LAND LINK REALTY LLC",
-      "amount": null,
-      "legal": "N/A",
-      "prop_address": "4534  COUNTY ROAD 597",
-      "prop_city": "FARMERSVILLE",
-      "prop_state": "TX",
-      "prop_zip": "75442",
-      "mail_address": "150 LIPAN ST",
-      "mail_city": "GREENVILLE",
-      "mail_state": "TX",
-      "mail_zip": "75402-2808",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -1196,7 +598,59 @@
       "mail_city": "PROSPER",
       "mail_state": "TX",
       "mail_zip": "75078-9602",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
+      "flags": [
+        "Judgment lien",
+        "New this week"
+      ],
+      "score": 60,
+      "_demo": false
+    },
+    {
+      "doc_num": "2026000044930",
+      "doc_type": "AJ",
+      "filed": "2026-04-07",
+      "cat": "judgment",
+      "cat_label": "Abstract of Judgment",
+      "owner": "CLOSE DAVID",
+      "grantee": "MIDLAND CREDIT MANAGEMENT INC",
+      "amount": null,
+      "legal": "N/A",
+      "prop_address": "448  WINDMILL DR",
+      "prop_city": "LAVON",
+      "prop_state": "TX",
+      "prop_zip": "75166",
+      "mail_address": "448 WINDMILL DR",
+      "mail_city": "LAVON",
+      "mail_state": "TX",
+      "mail_zip": "75166-1625",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
+      "flags": [
+        "Judgment lien",
+        "New this week"
+      ],
+      "score": 60,
+      "_demo": false
+    },
+    {
+      "doc_num": "2026000044781",
+      "doc_type": "AJ",
+      "filed": "2026-04-07",
+      "cat": "judgment",
+      "cat_label": "Abstract of Judgment",
+      "owner": "MALDONADO JOE",
+      "grantee": "LAND LINK REALTY LLC",
+      "amount": null,
+      "legal": "N/A",
+      "prop_address": "4534  COUNTY ROAD 597",
+      "prop_city": "FARMERSVILLE",
+      "prop_state": "TX",
+      "prop_zip": "75442",
+      "mail_address": "150 LIPAN ST",
+      "mail_city": "GREENVILLE",
+      "mail_state": "TX",
+      "mail_zip": "75402-2808",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -1222,33 +676,7 @@
       "mail_city": "MCKINNEY",
       "mail_state": "TX",
       "mail_zip": "75071-8077",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Judgment lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000044699",
-      "doc_type": "AJ",
-      "filed": "2026-04-07",
-      "cat": "judgment",
-      "cat_label": "Abstract of Judgment",
-      "owner": "RAWTHER SURAJ S",
-      "grantee": "CAPITAL ONE NA",
-      "amount": null,
-      "legal": "N/A",
-      "prop_address": "6800  MOCCASIN DR",
-      "prop_city": "PLANO",
-      "prop_state": "TX",
-      "prop_zip": "75023",
-      "mail_address": "6800 MOCCASIN DR",
-      "mail_city": "PLANO",
-      "mail_state": "TX",
-      "mail_zip": "75023-1917",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -1274,7 +702,33 @@
       "mail_city": "MCKINNEY",
       "mail_state": "TX",
       "mail_zip": "75071-4446",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
+      "flags": [
+        "Judgment lien",
+        "New this week"
+      ],
+      "score": 60,
+      "_demo": false
+    },
+    {
+      "doc_num": "2026000044699",
+      "doc_type": "AJ",
+      "filed": "2026-04-07",
+      "cat": "judgment",
+      "cat_label": "Abstract of Judgment",
+      "owner": "RAWTHER SURAJ S",
+      "grantee": "CAPITAL ONE NA",
+      "amount": null,
+      "legal": "N/A",
+      "prop_address": "6800  MOCCASIN DR",
+      "prop_city": "PLANO",
+      "prop_state": "TX",
+      "prop_zip": "75023",
+      "mail_address": "6800 MOCCASIN DR",
+      "mail_city": "PLANO",
+      "mail_state": "TX",
+      "mail_zip": "75023-1917",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -1300,33 +754,7 @@
       "mail_city": "ROYSE CITY",
       "mail_state": "TX",
       "mail_zip": "75189-8797",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Judgment lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000044924",
-      "doc_type": "AJ",
-      "filed": "2026-04-07",
-      "cat": "judgment",
-      "cat_label": "Abstract of Judgment",
-      "owner": "ORANGE BRANDON D",
-      "grantee": "MIDLAND CREDIT MANAGEMENT INC",
-      "amount": null,
-      "legal": "N/A",
-      "prop_address": "2610  ROCKBROOK DR",
-      "prop_city": "PLANO",
-      "prop_state": "TX",
-      "prop_zip": "75074",
-      "mail_address": "2610 ROCKBROOK DR",
-      "mail_city": "PLANO",
-      "mail_state": "TX",
-      "mail_zip": "75074-4950",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -1352,7 +780,33 @@
       "mail_city": "MCKINNEY",
       "mail_state": "TX",
       "mail_zip": "75071-7638",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
+      "flags": [
+        "Judgment lien",
+        "New this week"
+      ],
+      "score": 60,
+      "_demo": false
+    },
+    {
+      "doc_num": "2026000044924",
+      "doc_type": "AJ",
+      "filed": "2026-04-07",
+      "cat": "judgment",
+      "cat_label": "Abstract of Judgment",
+      "owner": "ORANGE BRANDON D",
+      "grantee": "MIDLAND CREDIT MANAGEMENT INC",
+      "amount": null,
+      "legal": "N/A",
+      "prop_address": "2610  ROCKBROOK DR",
+      "prop_city": "PLANO",
+      "prop_state": "TX",
+      "prop_zip": "75074",
+      "mail_address": "2610 ROCKBROOK DR",
+      "mail_city": "PLANO",
+      "mail_state": "TX",
+      "mail_zip": "75074-4950",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -1378,7 +832,7 @@
       "mail_city": "ALLEN",
       "mail_state": "TX",
       "mail_zip": "75002-8004",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -1404,33 +858,7 @@
       "mail_city": "MCKINNEY",
       "mail_state": "TX",
       "mail_zip": "75071-0006",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Judgment lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000044284",
-      "doc_type": "AJ",
-      "filed": "2026-04-07",
-      "cat": "judgment",
-      "cat_label": "Abstract of Judgment",
-      "owner": "BELEW MEAGAN",
-      "grantee": "MIDLAND CREDIT MANAGEMENT INC",
-      "amount": null,
-      "legal": "N/A",
-      "prop_address": "1119  EAGLE LAKE CT",
-      "prop_city": "WYLIE",
-      "prop_state": "TX",
-      "prop_zip": "75098",
-      "mail_address": "1119 EAGLE LAKE CT",
-      "mail_city": "WYLIE",
-      "mail_state": "TX",
-      "mail_zip": "75098-4898",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -1456,7 +884,7 @@
       "mail_city": "PRINCETON",
       "mail_state": "TX",
       "mail_zip": "75407-7439",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -1482,7 +910,33 @@
       "mail_city": "MCKINNEY",
       "mail_state": "TX",
       "mail_zip": "75070-1614",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
+      "flags": [
+        "Judgment lien",
+        "New this week"
+      ],
+      "score": 60,
+      "_demo": false
+    },
+    {
+      "doc_num": "2026000044284",
+      "doc_type": "AJ",
+      "filed": "2026-04-07",
+      "cat": "judgment",
+      "cat_label": "Abstract of Judgment",
+      "owner": "BELEW MEAGAN",
+      "grantee": "MIDLAND CREDIT MANAGEMENT INC",
+      "amount": null,
+      "legal": "N/A",
+      "prop_address": "1119  EAGLE LAKE CT",
+      "prop_city": "WYLIE",
+      "prop_state": "TX",
+      "prop_zip": "75098",
+      "mail_address": "1119 EAGLE LAKE CT",
+      "mail_city": "WYLIE",
+      "mail_state": "TX",
+      "mail_zip": "75098-4898",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -1508,7 +962,7 @@
       "mail_city": "MCKINNEY",
       "mail_state": "TX",
       "mail_zip": "75072-4195",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Probate / estate",
         "New this week"
@@ -1534,7 +988,7 @@
       "mail_city": "FRISCO",
       "mail_state": "TX",
       "mail_zip": "75034-3991",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -1560,7 +1014,7 @@
       "mail_city": "MURPHY",
       "mail_state": "TX",
       "mail_zip": "75094-4154",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -1586,7 +1040,7 @@
       "mail_city": "PRINCETON",
       "mail_state": "TX",
       "mail_zip": "75407-4173",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -1612,7 +1066,7 @@
       "mail_city": "MURPHY",
       "mail_state": "TX",
       "mail_zip": "75094-4105",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -1638,7 +1092,7 @@
       "mail_city": "MURPHY",
       "mail_state": "TX",
       "mail_zip": "75094-3887",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -1664,59 +1118,7 @@
       "mail_city": "FRISCO",
       "mail_state": "TX",
       "mail_zip": "75034-3991",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000044124",
-      "doc_type": "LIEN",
-      "filed": "2026-04-07",
-      "cat": "lien",
-      "cat_label": "Lien",
-      "owner": "CHU LING",
-      "grantee": "TEXAS HEALTH PLANO",
-      "amount": null,
-      "legal": "N/A",
-      "prop_address": "8100  WHARF ST",
-      "prop_city": "FRISCO",
-      "prop_state": "TX",
-      "prop_zip": "75035",
-      "mail_address": "FLAT A 3RD FLOOR DOMINION CT",
-      "mail_city": "HOMANTIN KOWIOON",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000044393",
-      "doc_type": "LIEN",
-      "filed": "2026-04-07",
-      "cat": "lien",
-      "cat_label": "Lien",
-      "owner": "ROBERT LETICIA",
-      "grantee": "TEXAS HEALTH PLANO",
-      "amount": null,
-      "legal": "N/A",
-      "prop_address": "1412  NATHAN LN",
-      "prop_city": "ANNA",
-      "prop_state": "TX",
-      "prop_zip": "75409",
-      "mail_address": "1412 NATHAN LN",
-      "mail_city": "ANNA",
-      "mail_state": "TX",
-      "mail_zip": "75409-8315",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -1742,7 +1144,59 @@
       "mail_city": "MURPHY",
       "mail_state": "TX",
       "mail_zip": "75094-4114",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
+      "flags": [
+        "Lien",
+        "New this week"
+      ],
+      "score": 60,
+      "_demo": false
+    },
+    {
+      "doc_num": "2026000044124",
+      "doc_type": "LIEN",
+      "filed": "2026-04-07",
+      "cat": "lien",
+      "cat_label": "Lien",
+      "owner": "CHU LING",
+      "grantee": "TEXAS HEALTH PLANO",
+      "amount": null,
+      "legal": "N/A",
+      "prop_address": "8100  WHARF ST",
+      "prop_city": "FRISCO",
+      "prop_state": "TX",
+      "prop_zip": "75035",
+      "mail_address": "FLAT A 3RD FLOOR DOMINION CT",
+      "mail_city": "HOMANTIN KOWIOON",
+      "mail_state": "TX",
+      "mail_zip": "",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
+      "flags": [
+        "Lien",
+        "New this week"
+      ],
+      "score": 60,
+      "_demo": false
+    },
+    {
+      "doc_num": "2026000044393",
+      "doc_type": "LIEN",
+      "filed": "2026-04-07",
+      "cat": "lien",
+      "cat_label": "Lien",
+      "owner": "ROBERT LETICIA",
+      "grantee": "TEXAS HEALTH PLANO",
+      "amount": null,
+      "legal": "N/A",
+      "prop_address": "1412  NATHAN LN",
+      "prop_city": "ANNA",
+      "prop_state": "TX",
+      "prop_zip": "75409",
+      "mail_address": "1412 NATHAN LN",
+      "mail_city": "ANNA",
+      "mail_state": "TX",
+      "mail_zip": "75409-8315",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -1768,7 +1222,7 @@
       "mail_city": "ANNA",
       "mail_state": "TX",
       "mail_zip": "75409-5130",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -1794,7 +1248,7 @@
       "mail_city": "MCKINNEY",
       "mail_state": "TX",
       "mail_zip": "75071-1278",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -1820,7 +1274,7 @@
       "mail_city": "MCKINNEY",
       "mail_state": "TX",
       "mail_zip": "75072-5116",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -1846,7 +1300,7 @@
       "mail_city": "WYLIE",
       "mail_state": "TX",
       "mail_zip": "75098-6929",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -1872,7 +1326,7 @@
       "mail_city": "DALLAS",
       "mail_state": "TX",
       "mail_zip": "75287-3905",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -1898,7 +1352,7 @@
       "mail_city": "FRISCO",
       "mail_state": "TX",
       "mail_zip": "75034-3991",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -1924,7 +1378,7 @@
       "mail_city": "PLANO",
       "mail_state": "TX",
       "mail_zip": "75074-4420",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -1950,7 +1404,7 @@
       "mail_city": "FAIRVIEW",
       "mail_state": "TX",
       "mail_zip": "75069-1345",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -1976,7 +1430,7 @@
       "mail_city": "PLANO",
       "mail_state": "TX",
       "mail_zip": "75074-6715",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -2002,7 +1456,7 @@
       "mail_city": "WYLIE",
       "mail_state": "TX",
       "mail_zip": "75098-6999",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -2028,7 +1482,7 @@
       "mail_city": "GARLAND",
       "mail_state": "TX",
       "mail_zip": "75040-0933",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -2054,9 +1508,35 @@
       "mail_city": "MURPHY",
       "mail_state": "TX",
       "mail_zip": "75094-4106",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
+        "New this week"
+      ],
+      "score": 60,
+      "_demo": false
+    },
+    {
+      "doc_num": "2026000044710",
+      "doc_type": "ML",
+      "filed": "2026-04-07",
+      "cat": "lien",
+      "cat_label": "Mechanics Lien",
+      "owner": "GOWENS KATHRYN",
+      "grantee": "TEXOMA COUNTRY POOLS & SPAS",
+      "amount": null,
+      "legal": "Subdivision - Name: WINDHAM FARMS #2 COLN Lot: 8 Block: C Reference - N/679",
+      "prop_address": "1725  HEARN LN",
+      "prop_city": "VAN ALSTYNE",
+      "prop_state": "TX",
+      "prop_zip": "75495",
+      "mail_address": "1725 HEARN LN",
+      "mail_city": "VAN ALSTYNE",
+      "mail_state": "TX",
+      "mail_zip": "75495-8171",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=ML&recordedDateRange=20260407,20260417&searchType=advancedSearch",
+      "flags": [
+        "Mechanic lien",
         "New this week"
       ],
       "score": 60,
@@ -2080,7 +1560,7 @@
       "mail_city": "MCKINNEY",
       "mail_state": "TX",
       "mail_zip": "75072-2857",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -2106,7 +1586,7 @@
       "mail_city": "ANNA",
       "mail_state": "TX",
       "mail_zip": "75409-2018",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -2132,7 +1612,7 @@
       "mail_city": "ALLEN",
       "mail_state": "TX",
       "mail_zip": "75002-3202",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -2158,7 +1638,7 @@
       "mail_city": "ST PAUL",
       "mail_state": "TX",
       "mail_zip": "75098-0230",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Probate / estate",
         "New this week"
@@ -2184,7 +1664,7 @@
       "mail_city": "PLANO",
       "mail_state": "TX",
       "mail_zip": "75025-3108",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Probate / estate",
         "New this week"
@@ -2210,9 +1690,61 @@
       "mail_city": "DALLAS",
       "mail_state": "TX",
       "mail_zip": "75248-1196",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
+        "New this week"
+      ],
+      "score": 60,
+      "_demo": false
+    },
+    {
+      "doc_num": "2026000045208",
+      "doc_type": "ML",
+      "filed": "2026-04-08",
+      "cat": "lien",
+      "cat_label": "Mechanics Lien",
+      "owner": "SHULTS JERRY WAYNE JR",
+      "grantee": "FROST BANK",
+      "amount": null,
+      "legal": "Subdivision - Name: WILLOW RIDGE #3 PROSPER Lot: 89 Block: B Reference - Q/618",
+      "prop_address": "850  DENTWOOD TRL",
+      "prop_city": "PROSPER",
+      "prop_state": "TX",
+      "prop_zip": "75078",
+      "mail_address": "850 DENTWOOD TRL",
+      "mail_city": "PROSPER",
+      "mail_state": "TX",
+      "mail_zip": "75078-8454",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=ML&recordedDateRange=20260407,20260417&searchType=advancedSearch",
+      "flags": [
+        "Mechanic lien",
+        "New this week"
+      ],
+      "score": 60,
+      "_demo": false
+    },
+    {
+      "doc_num": "2026000045803",
+      "doc_type": "CSL",
+      "filed": "2026-04-08",
+      "cat": "lien",
+      "cat_label": "Child Support Lien",
+      "owner": "LONSFORD PAUL WILLIAM",
+      "grantee": "TEXAS STATE OF",
+      "amount": null,
+      "legal": "N/A",
+      "prop_address": "820  HAWK WOOD LN",
+      "prop_city": "PROSPER",
+      "prop_state": "TX",
+      "prop_zip": "75078",
+      "mail_address": "820 HAWK WOOD LN",
+      "mail_city": "PROSPER",
+      "mail_state": "TX",
+      "mail_zip": "75078-2002",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=CSL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
+      "flags": [
+        "Child support lien",
         "New this week"
       ],
       "score": 60,
@@ -2236,7 +1768,7 @@
       "mail_city": "PLANO",
       "mail_state": "TX",
       "mail_zip": "75074-1639",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -2262,7 +1794,7 @@
       "mail_city": "DALLAS",
       "mail_state": "TX",
       "mail_zip": "75252-7950",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Probate / estate",
         "New this week"
@@ -2288,7 +1820,7 @@
       "mail_city": "MCKINNEY",
       "mail_state": "TX",
       "mail_zip": "75071-6778",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Probate / estate",
         "New this week"
@@ -2314,7 +1846,7 @@
       "mail_city": "SAN ANTONIO",
       "mail_state": "TX",
       "mail_zip": "78283-3999",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -2340,7 +1872,7 @@
       "mail_city": "ALLEN",
       "mail_state": "TX",
       "mail_zip": "75002-1716",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -2366,7 +1898,7 @@
       "mail_city": "PRINCETON",
       "mail_state": "TX",
       "mail_zip": "75407-2947",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -2392,7 +1924,7 @@
       "mail_city": "MCKINNEY",
       "mail_state": "TX",
       "mail_zip": "75072-2838",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -2418,7 +1950,7 @@
       "mail_city": "FRISCO",
       "mail_state": "TX",
       "mail_zip": "75035-3778",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Probate / estate",
         "New this week"
@@ -2444,7 +1976,7 @@
       "mail_city": "PLANO",
       "mail_state": "TX",
       "mail_zip": "75024-5222",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Probate / estate",
         "New this week"
@@ -2470,35 +2002,9 @@
       "mail_city": "MCKINNEY",
       "mail_state": "TX",
       "mail_zip": "75071-1967",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Probate / estate",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000046953",
-      "doc_type": "LIEN",
-      "filed": "2026-04-10",
-      "cat": "lien",
-      "cat_label": "Lien",
-      "owner": "BEAN BRENDA L",
-      "grantee": "HAYS CLINT ATTORNEY",
-      "amount": null,
-      "legal": "Subdivision - Name: OAK POINT ESTATES PLANO Lot: 41 Block: A Reference - R/58",
-      "prop_address": "2001  CRABAPPLE DR",
-      "prop_city": "PLANO",
-      "prop_state": "TX",
-      "prop_zip": "75074",
-      "mail_address": "2001 CRABAPPLE DR",
-      "mail_city": "PLANO",
-      "mail_state": "TX",
-      "mail_zip": "75074-2087",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Lien",
         "New this week"
       ],
       "score": 60,
@@ -2522,7 +2028,33 @@
       "mail_city": "CELINA",
       "mail_state": "TX",
       "mail_zip": "75009-1875",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
+      "flags": [
+        "Lien",
+        "New this week"
+      ],
+      "score": 60,
+      "_demo": false
+    },
+    {
+      "doc_num": "2026000046953",
+      "doc_type": "LIEN",
+      "filed": "2026-04-10",
+      "cat": "lien",
+      "cat_label": "Lien",
+      "owner": "BEAN BRENDA L",
+      "grantee": "HAYS CLINT ATTORNEY",
+      "amount": null,
+      "legal": "Subdivision - Name: OAK POINT ESTATES PLANO Lot: 41 Block: A Reference - R/58",
+      "prop_address": "2001  CRABAPPLE DR",
+      "prop_city": "PLANO",
+      "prop_state": "TX",
+      "prop_zip": "75074",
+      "mail_address": "2001 CRABAPPLE DR",
+      "mail_city": "PLANO",
+      "mail_state": "TX",
+      "mail_zip": "75074-2087",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -2548,33 +2080,7 @@
       "mail_city": "CELINA",
       "mail_state": "TX",
       "mail_zip": "75009-1868",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000047008",
-      "doc_type": "LIEN",
-      "filed": "2026-04-10",
-      "cat": "lien",
-      "cat_label": "Lien",
-      "owner": "TANYI GRACE",
-      "grantee": "WELLSPRING ESTATES HOMEOWNERS ASN INC",
-      "amount": null,
-      "legal": "Subdivision - Name: WELLSPRING ESTATES #1 CELINA Lot: 20 Block: B Reference - 2019/621",
-      "prop_address": "2821  RIVER BEND PL",
-      "prop_city": "CELINA",
-      "prop_state": "TX",
-      "prop_zip": "75009",
-      "mail_address": "2821 RIVER BEND PL",
-      "mail_city": "CELINA",
-      "mail_state": "TX",
-      "mail_zip": "75009-1871",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -2600,7 +2106,33 @@
       "mail_city": "MCKINNEY",
       "mail_state": "TX",
       "mail_zip": "75070-2125",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
+      "flags": [
+        "Lien",
+        "New this week"
+      ],
+      "score": 60,
+      "_demo": false
+    },
+    {
+      "doc_num": "2026000047008",
+      "doc_type": "LIEN",
+      "filed": "2026-04-10",
+      "cat": "lien",
+      "cat_label": "Lien",
+      "owner": "TANYI GRACE",
+      "grantee": "WELLSPRING ESTATES HOMEOWNERS ASN INC",
+      "amount": null,
+      "legal": "Subdivision - Name: WELLSPRING ESTATES #1 CELINA Lot: 20 Block: B Reference - 2019/621",
+      "prop_address": "2821  RIVER BEND PL",
+      "prop_city": "CELINA",
+      "prop_state": "TX",
+      "prop_zip": "75009",
+      "mail_address": "2821 RIVER BEND PL",
+      "mail_city": "CELINA",
+      "mail_state": "TX",
+      "mail_zip": "75009-1871",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -2626,7 +2158,7 @@
       "mail_city": "MCKINNEY",
       "mail_state": "TX",
       "mail_zip": "75069-2427",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -2652,7 +2184,7 @@
       "mail_city": "ALLEN",
       "mail_state": "TX",
       "mail_zip": "75013-6329",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -2678,7 +2210,7 @@
       "mail_city": "CELINA",
       "mail_state": "TX",
       "mail_zip": "75009-4740",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -2704,7 +2236,7 @@
       "mail_city": "MCKINNEY",
       "mail_state": "TX",
       "mail_zip": "75070-7014",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -2730,7 +2262,7 @@
       "mail_city": "MCKINNEY",
       "mail_state": "TX",
       "mail_zip": "75071-3159",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=PROB&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=PROB&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Probate / estate",
         "New this week"
@@ -2747,7 +2279,7 @@
       "owner": "WHITE JEFFREY",
       "grantee": "HENRY CHARLES EDWARD DECEASED",
       "amount": null,
-      "legal": "Subdivision - Name: TUCKER HILL 3 Lot: 20 Block: F",
+      "legal": "Subdivision - Name: TUCKER HILL #3 MCKINNEY Lot: 20 Block: F Reference - 2016/278",
       "prop_address": "2800  CREEK VIEW CT",
       "prop_city": "PROSPER",
       "prop_state": "TX",
@@ -2756,7 +2288,7 @@
       "mail_city": "PROSPER",
       "mail_state": "TX",
       "mail_zip": "75078-9562",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Probate / estate",
         "New this week"
@@ -2782,7 +2314,7 @@
       "mail_city": "PLANO",
       "mail_state": "TX",
       "mail_zip": "75075-3545",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Probate / estate",
         "New this week"
@@ -2808,7 +2340,7 @@
       "mail_city": "ALLEN",
       "mail_state": "TX",
       "mail_zip": "75002-4019",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Probate / estate",
         "New this week"
@@ -2834,7 +2366,7 @@
       "mail_city": "PLANO",
       "mail_state": "TX",
       "mail_zip": "75075-3545",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Probate / estate",
         "New this week"
@@ -2851,7 +2383,7 @@
       "owner": "TAYLOR MADISON",
       "grantee": "HENRY CHARLES EDWARD DECEASED",
       "amount": null,
-      "legal": "Subdivision - Name: TUCKER HILL 3 Lot: 20 Block: F",
+      "legal": "Subdivision - Name: TUCKER HILL #3 MCKINNEY Lot: 20 Block: F Reference - 2016/278",
       "prop_address": "601  RAWHIDE WAY",
       "prop_city": "PRINCETON",
       "prop_state": "TX",
@@ -2860,7 +2392,7 @@
       "mail_city": "PRINCETON",
       "mail_state": "TX",
       "mail_zip": "75407-0989",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Probate / estate",
         "New this week"
@@ -2886,33 +2418,7 @@
       "mail_city": "FRISCO",
       "mail_state": "TX",
       "mail_zip": "75035-2308",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000047512",
-      "doc_type": "LIEN",
-      "filed": "2026-04-13",
-      "cat": "lien",
-      "cat_label": "Lien",
-      "owner": "DOH KELVIN MBIYAMBANG",
-      "grantee": "CELINA CREEKS OF LEGACY HOMEOWNERS ASN INC",
-      "amount": null,
-      "legal": "Subdivision - Name: CREEKS LEGACY #2C ADDITION CELINA Lot: 30 Block: V Reference - 2017/840",
-      "prop_address": "4324  CANADIAN RIVER DR",
-      "prop_city": "PROSPER",
-      "prop_state": "TX",
-      "prop_zip": "75078",
-      "mail_address": "4324 CANADIAN RIVER DR",
-      "mail_city": "PROSPER",
-      "mail_state": "TX",
-      "mail_zip": "75078-2092",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -2938,7 +2444,33 @@
       "mail_city": "PROSPER",
       "mail_state": "TX",
       "mail_zip": "75078-8965",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
+      "flags": [
+        "Lien",
+        "New this week"
+      ],
+      "score": 60,
+      "_demo": false
+    },
+    {
+      "doc_num": "2026000047512",
+      "doc_type": "LIEN",
+      "filed": "2026-04-13",
+      "cat": "lien",
+      "cat_label": "Lien",
+      "owner": "DOH KELVIN MBIYAMBANG",
+      "grantee": "CELINA CREEKS OF LEGACY HOMEOWNERS ASN INC",
+      "amount": null,
+      "legal": "Subdivision - Name: CREEKS LEGACY #2C ADDITION CELINA Lot: 30 Block: V Reference - 2017/840",
+      "prop_address": "4324  CANADIAN RIVER DR",
+      "prop_city": "PROSPER",
+      "prop_state": "TX",
+      "prop_zip": "75078",
+      "mail_address": "4324 CANADIAN RIVER DR",
+      "mail_city": "PROSPER",
+      "mail_state": "TX",
+      "mail_zip": "75078-2092",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -2953,9 +2485,9 @@
       "cat": "lien",
       "cat_label": "Lien",
       "owner": "KUNCLRS CHRISTINE",
-      "grantee": "CHARLESTON CREEK HOMEOWNERS ASN INC",
+      "grantee": "HAYS CLINT ATTORNEY",
       "amount": null,
-      "legal": "Subdivision - Name: CHARLESTON CREEK 1 Lot: 3 Block: B",
+      "legal": "Subdivision - Name: CHARLESTON CREEK #1 MCKINNEY Lot: 3 Block: B Reference - 2006/436",
       "prop_address": "704  PRIDE CT",
       "prop_city": "MCKINNEY",
       "prop_state": "TX",
@@ -2964,33 +2496,7 @@
       "mail_city": "MCKINNEY",
       "mail_state": "TX",
       "mail_zip": "75069-2332",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000047256",
-      "doc_type": "LIEN",
-      "filed": "2026-04-13",
-      "cat": "lien",
-      "cat_label": "Lien",
-      "owner": "MARIANA DILWORTH",
-      "grantee": "COVENANT CLEARINGHOUSE LLC TRUSTEE",
-      "amount": null,
-      "legal": "Subdivision - Name: VILLAS AT MONTE CARLO 2 A Lot: 6 Block: O",
-      "prop_address": "1216  ROMAN DR",
-      "prop_city": "PRINCETON",
-      "prop_state": "TX",
-      "prop_zip": "75407",
-      "mail_address": "1216 ROMAN DR",
-      "mail_city": "PRINCETON",
-      "mail_state": "TX",
-      "mail_zip": "75407-0345",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -3016,7 +2522,7 @@
       "mail_city": "CELINA",
       "mail_state": "TX",
       "mail_zip": "75009-6628",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -3042,7 +2548,7 @@
       "mail_city": "WYLIE",
       "mail_state": "TX",
       "mail_zip": "75098-8603",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -3068,7 +2574,7 @@
       "mail_city": "FRISCO",
       "mail_state": "TX",
       "mail_zip": "75034-7242",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -3094,33 +2600,7 @@
       "mail_city": "ALLEN",
       "mail_state": "TX",
       "mail_zip": "75013-3338",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000047683",
-      "doc_type": "LIEN",
-      "filed": "2026-04-13",
-      "cat": "lien",
-      "cat_label": "Lien",
-      "owner": "GANGASANI KARTHIK REDDY",
-      "grantee": "RIDGEVIEW RANCH HOMEOWNERS ASN INC",
-      "amount": null,
-      "legal": "Subdivision - Name: RIDGEVIEW RANCH ESTATES #2 PLANO Lot: 10 Block: D Reference - J/695",
-      "prop_address": "9717  KENNEMER DR",
-      "prop_city": "PLANO",
-      "prop_state": "TX",
-      "prop_zip": "75025",
-      "mail_address": "9717 KENNEMER DR",
-      "mail_city": "PLANO",
-      "mail_state": "TX",
-      "mail_zip": "75025-5171",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -3146,9 +2626,61 @@
       "mail_city": "FRISCO",
       "mail_state": "TX",
       "mail_zip": "75034-2264",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
+        "New this week"
+      ],
+      "score": 60,
+      "_demo": false
+    },
+    {
+      "doc_num": "2026000047683",
+      "doc_type": "LIEN",
+      "filed": "2026-04-13",
+      "cat": "lien",
+      "cat_label": "Lien",
+      "owner": "GANGASANI KARTHIK REDDY",
+      "grantee": "RIDGEVIEW RANCH HOMEOWNERS ASN INC",
+      "amount": null,
+      "legal": "Subdivision - Name: RIDGEVIEW RANCH ESTATES #2 PLANO Lot: 10 Block: D Reference - J/695",
+      "prop_address": "9717  KENNEMER DR",
+      "prop_city": "PLANO",
+      "prop_state": "TX",
+      "prop_zip": "75025",
+      "mail_address": "9717 KENNEMER DR",
+      "mail_city": "PLANO",
+      "mail_state": "TX",
+      "mail_zip": "75025-5171",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
+      "flags": [
+        "Lien",
+        "New this week"
+      ],
+      "score": 60,
+      "_demo": false
+    },
+    {
+      "doc_num": "2026000047316",
+      "doc_type": "ML",
+      "filed": "2026-04-13",
+      "cat": "lien",
+      "cat_label": "Mechanics Lien",
+      "owner": "CROSS KEN",
+      "grantee": "ATLAS REMODELING LLC",
+      "amount": null,
+      "legal": "Subdivision - Name: MEADOW HILL EST #4 FRISCO Lot: 5 Block: A Reference - M/175",
+      "prop_address": "7798  MEADOW HILL DR",
+      "prop_city": "FRISCO",
+      "prop_state": "TX",
+      "prop_zip": "75033",
+      "mail_address": "7798 MEADOW HILL DR",
+      "mail_city": "FRISCO",
+      "mail_state": "TX",
+      "mail_zip": "75033-2088",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=ML&recordedDateRange=20260407,20260417&searchType=advancedSearch",
+      "flags": [
+        "Mechanic lien",
         "New this week"
       ],
       "score": 60,
@@ -3172,7 +2704,7 @@
       "mail_city": "PLANO",
       "mail_state": "TX",
       "mail_zip": "75093-2639",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -3198,33 +2730,7 @@
       "mail_city": "PLANO",
       "mail_state": "TX",
       "mail_zip": "75023-5455",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Tax lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000047927",
-      "doc_type": "FTL",
-      "filed": "2026-04-14",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "YOUNG RONALD",
-      "grantee": "U S A INTERNAL REVENUE SERVICE",
-      "amount": null,
-      "legal": "N/A",
-      "prop_address": "3205  BULLOCK DR",
-      "prop_city": "PLANO",
-      "prop_state": "TX",
-      "prop_zip": "75023",
-      "mail_address": "3205 BULLOCK DR",
-      "mail_city": "PLANO",
-      "mail_state": "TX",
-      "mail_zip": "75023-5617",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -3250,7 +2756,33 @@
       "mail_city": "PLANO",
       "mail_state": "TX",
       "mail_zip": "75025-6061",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
+      "flags": [
+        "Tax lien",
+        "New this week"
+      ],
+      "score": 60,
+      "_demo": false
+    },
+    {
+      "doc_num": "2026000047927",
+      "doc_type": "FTL",
+      "filed": "2026-04-14",
+      "cat": "lien",
+      "cat_label": "Federal Tax Lien",
+      "owner": "YOUNG RONALD",
+      "grantee": "U S A INTERNAL REVENUE SERVICE",
+      "amount": null,
+      "legal": "N/A",
+      "prop_address": "3205  BULLOCK DR",
+      "prop_city": "PLANO",
+      "prop_state": "TX",
+      "prop_zip": "75023",
+      "mail_address": "3205 BULLOCK DR",
+      "mail_city": "PLANO",
+      "mail_state": "TX",
+      "mail_zip": "75023-5617",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -3276,7 +2808,7 @@
       "mail_city": "LAVON",
       "mail_state": "TX",
       "mail_zip": "75166-1634",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -3302,7 +2834,7 @@
       "mail_city": "PLANO",
       "mail_state": "TX",
       "mail_zip": "75023-5455",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -3328,7 +2860,7 @@
       "mail_city": "MCKINNEY",
       "mail_state": "TX",
       "mail_zip": "75071-5991",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -3354,7 +2886,7 @@
       "mail_city": "FRISCO",
       "mail_state": "TX",
       "mail_zip": "75035-4813",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -3380,7 +2912,7 @@
       "mail_city": "FARMERSVILLE",
       "mail_state": "TX",
       "mail_zip": "75442-2590",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -3406,7 +2938,7 @@
       "mail_city": "LAVON",
       "mail_state": "TX",
       "mail_zip": "75166-1730",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -3432,7 +2964,7 @@
       "mail_city": "DALLAS",
       "mail_state": "TX",
       "mail_zip": "75252-2510",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -3458,33 +2990,7 @@
       "mail_city": "WYLIE",
       "mail_state": "TX",
       "mail_zip": "75098-8226",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Judgment lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000047768",
-      "doc_type": "AJ",
-      "filed": "2026-04-14",
-      "cat": "judgment",
-      "cat_label": "Abstract of Judgment",
-      "owner": "BROOKS LINDA",
-      "grantee": "MIDLAND CREDIT MANAGEMENT INC",
-      "amount": null,
-      "legal": "N/A",
-      "prop_address": "3912  18TH ST",
-      "prop_city": "PLANO",
-      "prop_state": "TX",
-      "prop_zip": "75074",
-      "mail_address": "3912 18TH ST",
-      "mail_city": "PLANO",
-      "mail_state": "TX",
-      "mail_zip": "75074-7901",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -3510,7 +3016,7 @@
       "mail_city": "FRISCO",
       "mail_state": "TX",
       "mail_zip": "75035-5175",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -3536,7 +3042,7 @@
       "mail_city": "MCKINNEY",
       "mail_state": "TX",
       "mail_zip": "75069-2247",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -3545,50 +3051,24 @@
       "_demo": false
     },
     {
-      "doc_num": "2026000047951",
+      "doc_num": "2026000047768",
       "doc_type": "AJ",
       "filed": "2026-04-14",
       "cat": "judgment",
       "cat_label": "Abstract of Judgment",
-      "owner": "LUCATERO ANTONIA",
+      "owner": "BROOKS LINDA",
       "grantee": "MIDLAND CREDIT MANAGEMENT INC",
       "amount": null,
       "legal": "N/A",
-      "prop_address": "125  DEVENSHIRE DR",
-      "prop_city": "MURPHY",
+      "prop_address": "3912  18TH ST",
+      "prop_city": "PLANO",
       "prop_state": "TX",
-      "prop_zip": "75094",
-      "mail_address": "125 DEVENSHIRE DR",
-      "mail_city": "MURPHY",
+      "prop_zip": "75074",
+      "mail_address": "3912 18TH ST",
+      "mail_city": "PLANO",
       "mail_state": "TX",
-      "mail_zip": "75094-4234",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
-      "flags": [
-        "Judgment lien",
-        "New this week"
-      ],
-      "score": 60,
-      "_demo": false
-    },
-    {
-      "doc_num": "2026000047782",
-      "doc_type": "AJ",
-      "filed": "2026-04-14",
-      "cat": "judgment",
-      "cat_label": "Abstract of Judgment",
-      "owner": "PEARSON BILLY",
-      "grantee": "MIDLAND CREDIT MANAGEMENT INC",
-      "amount": null,
-      "legal": "N/A",
-      "prop_address": "4601  BELLCREST DR",
-      "prop_city": "MCKINNEY",
-      "prop_state": "TX",
-      "prop_zip": "75070",
-      "mail_address": "4601 BELLCREST DR",
-      "mail_city": "MCKINNEY",
-      "mail_state": "TX",
-      "mail_zip": "75070-7751",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "mail_zip": "75074-7901",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -3614,7 +3094,59 @@
       "mail_city": "FRISCO",
       "mail_state": "TX",
       "mail_zip": "75034-2282",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
+      "flags": [
+        "Judgment lien",
+        "New this week"
+      ],
+      "score": 60,
+      "_demo": false
+    },
+    {
+      "doc_num": "2026000047951",
+      "doc_type": "AJ",
+      "filed": "2026-04-14",
+      "cat": "judgment",
+      "cat_label": "Abstract of Judgment",
+      "owner": "LUCATERO ANTONIA",
+      "grantee": "MIDLAND CREDIT MANAGEMENT INC",
+      "amount": null,
+      "legal": "N/A",
+      "prop_address": "125  DEVENSHIRE DR",
+      "prop_city": "MURPHY",
+      "prop_state": "TX",
+      "prop_zip": "75094",
+      "mail_address": "125 DEVENSHIRE DR",
+      "mail_city": "MURPHY",
+      "mail_state": "TX",
+      "mail_zip": "75094-4234",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
+      "flags": [
+        "Judgment lien",
+        "New this week"
+      ],
+      "score": 60,
+      "_demo": false
+    },
+    {
+      "doc_num": "2026000047782",
+      "doc_type": "AJ",
+      "filed": "2026-04-14",
+      "cat": "judgment",
+      "cat_label": "Abstract of Judgment",
+      "owner": "PEARSON BILLY",
+      "grantee": "MIDLAND CREDIT MANAGEMENT INC",
+      "amount": null,
+      "legal": "N/A",
+      "prop_address": "4601  BELLCREST DR",
+      "prop_city": "MCKINNEY",
+      "prop_state": "TX",
+      "prop_zip": "75070",
+      "mail_address": "4601 BELLCREST DR",
+      "mail_city": "MCKINNEY",
+      "mail_state": "TX",
+      "mail_zip": "75070-7751",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -3640,7 +3172,7 @@
       "mail_city": "PLANO",
       "mail_state": "TX",
       "mail_zip": "75075-1231",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -3666,7 +3198,7 @@
       "mail_city": "PRINCETON",
       "mail_state": "TX",
       "mail_zip": "75407-2929",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -3692,7 +3224,7 @@
       "mail_city": "MCKINNEY",
       "mail_state": "TX",
       "mail_zip": "75071-1960",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Probate / estate",
         "New this week"
@@ -3718,7 +3250,7 @@
       "mail_city": "MCKINNEY",
       "mail_state": "TX",
       "mail_zip": "75069-1447",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -3744,7 +3276,7 @@
       "mail_city": "PLANO",
       "mail_state": "TX",
       "mail_zip": "75025-5080",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -3770,7 +3302,7 @@
       "mail_city": "ANNA",
       "mail_state": "TX",
       "mail_zip": "75409-5820",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -3796,7 +3328,7 @@
       "mail_city": "PRINCETON",
       "mail_state": "TX",
       "mail_zip": "75407-0319",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -3822,7 +3354,7 @@
       "mail_city": "MIAMI LAKES",
       "mail_state": "FL",
       "mail_zip": "33018-1424",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -3848,9 +3380,35 @@
       "mail_city": "RICHARDSON",
       "mail_state": "TX",
       "mail_zip": "75082-3638",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
+        "New this week"
+      ],
+      "score": 60,
+      "_demo": false
+    },
+    {
+      "doc_num": "2026000047779",
+      "doc_type": "ML",
+      "filed": "2026-04-14",
+      "cat": "lien",
+      "cat_label": "Mechanics Lien",
+      "owner": "GILLILAND TIMOTHY O",
+      "grantee": "FROST BANK",
+      "amount": null,
+      "legal": "Subdivision - Name: WINDY HILL FARMS #1 MURPHY Lot: 3 Block: B Reference - L/2",
+      "prop_address": "801  CLAY DR",
+      "prop_city": "MURPHY",
+      "prop_state": "TX",
+      "prop_zip": "75094",
+      "mail_address": "801 CLAY DR",
+      "mail_city": "MURPHY",
+      "mail_state": "TX",
+      "mail_zip": "75094-4724",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=ML&recordedDateRange=20260407,20260417&searchType=advancedSearch",
+      "flags": [
+        "Mechanic lien",
         "New this week"
       ],
       "score": 60,
@@ -3874,7 +3432,7 @@
       "mail_city": "PRINCETON",
       "mail_state": "TX",
       "mail_zip": "75407-4169",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -3900,7 +3458,7 @@
       "mail_city": "ANNA",
       "mail_state": "TX",
       "mail_zip": "75409-5965",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=FTL&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Tax lien",
         "New this week"
@@ -3926,7 +3484,7 @@
       "mail_city": "PRINCETON",
       "mail_state": "TX",
       "mail_zip": "75407-3476",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -3952,7 +3510,7 @@
       "mail_city": "MCKINNEY",
       "mail_state": "TX",
       "mail_zip": "75071-4312",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AJ&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Judgment lien",
         "New this week"
@@ -3978,7 +3536,7 @@
       "mail_city": "PLANO",
       "mail_state": "TX",
       "mail_zip": "75074-3602",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=PROB&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=PROB&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Probate / estate",
         "New this week"
@@ -4004,7 +3562,7 @@
       "mail_city": "MCKINNEY",
       "mail_state": "TX",
       "mail_zip": "75071-1803",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Probate / estate",
         "New this week"
@@ -4030,7 +3588,7 @@
       "mail_city": "ALLEN",
       "mail_state": "TX",
       "mail_zip": "75002-5023",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Probate / estate",
         "New this week"
@@ -4048,15 +3606,15 @@
       "grantee": "SACHSE CITY OF",
       "amount": null,
       "legal": "Subdivision - Name: SACHSE FARMS Lot: 1 Block: 3",
-      "prop_address": "7518  TAYLOR LN",
-      "prop_city": "SACHSE",
+      "prop_address": "301  ACEVES CT",
+      "prop_city": "ANNA",
       "prop_state": "TX",
-      "prop_zip": "75048",
-      "mail_address": "5775 BLAIRVIEW ST APT 590",
-      "mail_city": "FRISCO",
+      "prop_zip": "75409",
+      "mail_address": "113 ADAMS CT",
+      "mail_city": "CELINA",
       "mail_state": "TX",
-      "mail_zip": "75034-0521",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "mail_zip": "75009-4036",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -4082,7 +3640,7 @@
       "mail_city": "DALLAS",
       "mail_state": "TX",
       "mail_zip": "75287-6600",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -4108,7 +3666,7 @@
       "mail_city": "DALLAS",
       "mail_state": "TX",
       "mail_zip": "75252-2329",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -4134,7 +3692,7 @@
       "mail_city": "PLANO",
       "mail_state": "TX",
       "mail_zip": "75024-6868",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -4160,7 +3718,7 @@
       "mail_city": "PLANO",
       "mail_state": "TX",
       "mail_zip": "75023-1913",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -4186,7 +3744,7 @@
       "mail_city": "PRINCETON",
       "mail_state": "TX",
       "mail_zip": "75407-0840",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -4204,15 +3762,15 @@
       "grantee": "SACHSE CITY OF",
       "amount": null,
       "legal": "Subdivision - Name: SACHSE FARMS Lot: 1 Block: 3",
-      "prop_address": "7518  TAYLOR LN",
-      "prop_city": "SACHSE",
+      "prop_address": "301  ACEVES CT",
+      "prop_city": "ANNA",
       "prop_state": "TX",
-      "prop_zip": "75048",
-      "mail_address": "5775 BLAIRVIEW ST APT 590",
-      "mail_city": "FRISCO",
+      "prop_zip": "75409",
+      "mail_address": "113 ADAMS CT",
+      "mail_city": "CELINA",
       "mail_state": "TX",
-      "mail_zip": "75034-0521",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "mail_zip": "75009-4036",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -4230,15 +3788,15 @@
       "grantee": "SACHSE CITY OF",
       "amount": null,
       "legal": "Subdivision - Name: SACHSE FARMS Lot: 1 Block: 3",
-      "prop_address": "7518  TAYLOR LN",
-      "prop_city": "SACHSE",
+      "prop_address": "301  ACEVES CT",
+      "prop_city": "ANNA",
       "prop_state": "TX",
-      "prop_zip": "75048",
-      "mail_address": "5775 BLAIRVIEW ST APT 590",
-      "mail_city": "FRISCO",
+      "prop_zip": "75409",
+      "mail_address": "113 ADAMS CT",
+      "mail_city": "CELINA",
       "mail_state": "TX",
-      "mail_zip": "75034-0521",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "mail_zip": "75009-4036",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
         "New this week"
@@ -4264,7 +3822,33 @@
       "mail_city": "ALLEN",
       "mail_state": "TX",
       "mail_zip": "75002-1736",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260407,20260417&searchType=advancedSearch",
+      "flags": [
+        "Probate / estate",
+        "New this week"
+      ],
+      "score": 60,
+      "_demo": false
+    },
+    {
+      "doc_num": "2026000049627",
+      "doc_type": "AH",
+      "filed": "2026-04-16",
+      "cat": "probate",
+      "cat_label": "Affidavit of Heirship",
+      "owner": "Holley Johnny",
+      "grantee": "Holley Johnny",
+      "amount": null,
+      "legal": "N/A",
+      "prop_address": "1418 N BRADLEY ST",
+      "prop_city": "MCKINNEY",
+      "prop_state": "TX",
+      "prop_zip": "75069",
+      "mail_address": "1418 N BRADLEY ST",
+      "mail_city": "MCKINNEY",
+      "mail_state": "TX",
+      "mail_zip": "75069-1700",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Probate / estate",
         "New this week"
@@ -4290,9 +3874,35 @@
       "mail_city": "CELINA",
       "mail_state": "TX",
       "mail_zip": "75009-4639",
-      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260406,20260416&searchType=advancedSearch",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LIEN&recordedDateRange=20260407,20260417&searchType=advancedSearch",
       "flags": [
         "Lien",
+        "New this week"
+      ],
+      "score": 60,
+      "_demo": false
+    },
+    {
+      "doc_num": "2026000049571",
+      "doc_type": "ML",
+      "filed": "2026-04-16",
+      "cat": "lien",
+      "cat_label": "Mechanics Lien",
+      "owner": "HARRISON LAURA",
+      "grantee": "FROST BANK",
+      "amount": null,
+      "legal": "N/A",
+      "prop_address": "8  CHISHOLM TRL",
+      "prop_city": "LUCAS",
+      "prop_state": "TX",
+      "prop_zip": "75002",
+      "mail_address": "8 CHISHOLM TRL",
+      "mail_city": "ALLEN",
+      "mail_state": "TX",
+      "mail_zip": "75002-6820",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=ML&recordedDateRange=20260407,20260417&searchType=advancedSearch",
+      "flags": [
+        "Mechanic lien",
         "New this week"
       ],
       "score": 60,
