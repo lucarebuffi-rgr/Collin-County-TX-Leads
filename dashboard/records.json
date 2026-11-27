@@ -1,11 +1,90 @@
 {
-  "fetched_at": "2026-11-26T17:45:06.395373Z",
+  "fetched_at": "2026-11-27T17:25:59.996030Z",
   "source": "Collin County TX \u2013 PublicSearch",
   "date_range": {
-    "from": "11/19/2026",
-    "to": "11/26/2026"
+    "from": "11/20/2026",
+    "to": "11/27/2026"
   },
-  "total": 0,
-  "with_address": 0,
-  "records": []
+  "total": 3,
+  "with_address": 3,
+  "records": [
+    {
+      "doc_num": "2026-DEMO-0001",
+      "doc_type": "LP",
+      "filed": "2026-11-20",
+      "cat": "pre_foreclosure",
+      "cat_label": "Lis Pendens",
+      "owner": "SMITH ROBERT",
+      "grantee": "ROCKET MORTGAGE LLC",
+      "amount": null,
+      "legal": "DEMO RECORD",
+      "prop_address": "1412  CHICORY LN",
+      "prop_city": "CELINA",
+      "prop_state": "TX",
+      "prop_zip": "75009",
+      "mail_address": "1412 CHICORY LN",
+      "mail_city": "CELINA",
+      "mail_state": "TX",
+      "mail_zip": "75009-6066",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=LP&searchType=advancedSearch",
+      "flags": [
+        "Lis pendens",
+        "New this week"
+      ],
+      "score": 80,
+      "_demo": true
+    },
+    {
+      "doc_num": "2026-DEMO-0010",
+      "doc_type": "AH",
+      "filed": "2026-11-22",
+      "cat": "probate",
+      "cat_label": "Affidavit of Heirship",
+      "owner": "GARCIA CARLOS",
+      "grantee": "GARCIA MARIA",
+      "amount": null,
+      "legal": "DEMO RECORD",
+      "prop_address": "2003  WINDY BANKS DR",
+      "prop_city": "PRINCETON",
+      "prop_state": "TX",
+      "prop_zip": "75407",
+      "mail_address": "2003 WINDY BANKS DR",
+      "mail_city": "PRINCETON",
+      "mail_state": "TX",
+      "mail_zip": "75407-1758",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=AH&searchType=advancedSearch",
+      "flags": [
+        "Probate / estate",
+        "New this week"
+      ],
+      "score": 60,
+      "_demo": true
+    },
+    {
+      "doc_num": "2026-DEMO-0005",
+      "doc_type": "ML",
+      "filed": "2026-11-24",
+      "cat": "lien",
+      "cat_label": "Mechanics Lien",
+      "owner": "BROWN MICHAEL",
+      "grantee": "LONE STAR CONTR",
+      "amount": 22000.0,
+      "legal": "DEMO RECORD",
+      "prop_address": "4601  SUMMIT VIEW DR",
+      "prop_city": "MCKINNEY",
+      "prop_state": "TX",
+      "prop_zip": "75071",
+      "mail_address": "4601 SUMMIT VIEW DR",
+      "mail_city": "MCKINNEY",
+      "mail_state": "TX",
+      "mail_zip": "75071-5394",
+      "clerk_url": "https://collin.tx.publicsearch.us/results?department=RP&_docTypes=ML&searchType=advancedSearch",
+      "flags": [
+        "Mechanic lien",
+        "New this week"
+      ],
+      "score": 60,
+      "_demo": true
+    }
+  ]
 }
