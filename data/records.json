@@ -1,9 +1,9 @@
 {
-  "fetched_at": "2026-11-27T17:25:59.996030Z",
+  "fetched_at": "2026-11-28T16:10:41.562877Z",
   "source": "Collin County TX \u2013 PublicSearch",
   "date_range": {
-    "from": "11/20/2026",
-    "to": "11/27/2026"
+    "from": "11/21/2026",
+    "to": "11/28/2026"
   },
   "total": 3,
   "with_address": 3,
@@ -11,7 +11,7 @@
     {
       "doc_num": "2026-DEMO-0001",
       "doc_type": "LP",
-      "filed": "2026-11-20",
+      "filed": "2026-11-21",
       "cat": "pre_foreclosure",
       "cat_label": "Lis Pendens",
       "owner": "SMITH ROBERT",
@@ -37,7 +37,7 @@
     {
       "doc_num": "2026-DEMO-0010",
       "doc_type": "AH",
-      "filed": "2026-11-22",
+      "filed": "2026-11-23",
       "cat": "probate",
       "cat_label": "Affidavit of Heirship",
       "owner": "GARCIA CARLOS",
@@ -63,7 +63,7 @@
     {
       "doc_num": "2026-DEMO-0005",
       "doc_type": "ML",
-      "filed": "2026-11-24",
+      "filed": "2026-11-25",
       "cat": "lien",
       "cat_label": "Mechanics Lien",
       "owner": "BROWN MICHAEL",
